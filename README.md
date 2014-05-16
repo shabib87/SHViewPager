@@ -48,3 +48,6 @@ The required datasource methods are:
 - (UIViewController *)viewPager:(SHViewPager *)viewPager controllerForPageAtIndex:(NSInteger)index;
 
 Happy coding :)
+
+Shabib Hossain
+May 16, 2014
