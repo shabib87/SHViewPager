@@ -1,5 +1,5 @@
 //
-//  SHViewPager.h
+//  SHContentVC.h
 //  SHViewPager
 //  version 1.0, compatible with iOS 6.0 and greater
 //
