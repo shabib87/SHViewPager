@@ -38,17 +38,16 @@ The `SHViewPager` needs it's `datasource` and `delegate` protocol to be implemen
 Three `datasource` methods are required and others are optional.
 
 **The required datasource methods are:**
-```c++
+```objc
 // total number of pages to be displayed by the controller
 - (NSInteger)numberOfPagesInViewPager:(SHViewPager *)viewPager;
 ```
-```
+```objc
 // the viewcontroller that will contain the pages, in most of the cases it will be the same viewcontroller that is acting as the datasource and delegate
 // i.e. return value will be 'self'
 - (UIViewController *)containerControllerForViewPager:(SHViewPager *)viewPager;
 ```
-
-```
+```objc
 // the viewcontroller that is to be shown as as a page in the pager
 - (UIViewController *)viewPager:(SHViewPager *)viewPager controllerForPageAtIndex:(NSInteger)index;
 ````
