@@ -5,7 +5,7 @@ A simple view pager for iOS. Compatible with iOS 6.0 or later.
 
 **SHViewPager**
 
-version 1.0, compatible with iOS 6.0 or, later
+`version 1.0`, compatible with `iOS 6.0` or, later
 
 **Created by shabib hossain on 5/15/14.**
 
@@ -37,8 +37,8 @@ You can either, make your desired UIViewController class a subclass of SHViewPag
 The SHViewPager needs it's datasource and delegate protocol to be implemented.
 Three datasource methods are required and others are optional.
 
-The required datasource methods are:
-```
+* The required datasource methods are:
+```objC
 // total number of pages to be displayed by the controller
 - (NSInteger)numberOfPagesInViewPager:(SHViewPager *)viewPager;
 ```
@@ -53,7 +53,8 @@ The required datasource methods are:
 - (UIViewController *)viewPager:(SHViewPager *)viewPager controllerForPageAtIndex:(NSInteger)index;
 ````
 
-Happy coding :)
+## Happy coding :)
 
 Shabib Hossain
+
 May 16, 2014
