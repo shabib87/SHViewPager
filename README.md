@@ -3,13 +3,13 @@ SHViewPagerExample
 
 A simple view pager for iOS. Compatible with iOS 6.0 or later.
 
-**SHViewPager**
+##SHViewPager
 
-`version 1.0`, compatible with `iOS 6.0` or, later
+`version 1.0`, compatible with iOS 6.0 or, later
 
-**Created by shabib hossain on 5/15/14.**
+**Created by** shabib hossain on 5/15/14.
 
-**Copyright (c) 2014 shabib hossain. All rights reserved.**
+**Copyright (c)** 2014 shabib hossain. All rights reserved.
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the "Software"),
@@ -30,14 +30,14 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-**How to use:**
+##How to use:
 
 Take the `SHViewPager.h`, `SHViewPager.m` and `SHViewPagerController.h`, `SHViewPagerController.m` and add them to your project.
 You can either, make your desired UIViewController class a subclass of SHViewPagerController or, create the SHViewPager in your code and subview it or, you can outlet it in your xib file.
 The SHViewPager needs it's datasource and delegate protocol to be implemented.
 Three datasource methods are required and others are optional.
 
-* The required datasource methods are:
+**The required datasource methods are:**
 ```objC
 // total number of pages to be displayed by the controller
 - (NSInteger)numberOfPagesInViewPager:(SHViewPager *)viewPager;
@@ -53,7 +53,7 @@ Three datasource methods are required and others are optional.
 - (UIViewController *)viewPager:(SHViewPager *)viewPager controllerForPageAtIndex:(NSInteger)index;
 ````
 
-## Happy coding :)
+Happy coding :)
 
 Shabib Hossain
 
