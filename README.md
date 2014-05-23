@@ -10,7 +10,7 @@ SHViewPagerExample
 **Created by** shabib hossain on 5/15/14.
 
 **Copyright (c)** 2014 shabib hossain. All rights reserved.
-- This software is licenced under MIT licence. Plsease check `LICENCE.md` for more details.
+- This software is licenced under MIT licence. Please check `LICENCE.md` for more details.
 
 ##How to use:
 
