@@ -34,6 +34,19 @@ Three `datasource` methods are required and others are optional.
 - (UIViewController *)viewPager:(SHViewPager *)viewPager controllerForPageAtIndex:(NSInteger)index;
 ````
 
+To display the contents, you need to call the instance method `reloadData` in your desired method block, typically in `viewDidLoad`.
+
+-Example:
+
+```objc
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    // your code
+    [viewPager reloadData];
+}
+```
+
 Happy coding :)
 
 Shabib Hossain
