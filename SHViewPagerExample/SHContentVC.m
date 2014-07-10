@@ -11,6 +11,7 @@
 //
 
 #import "SHContentVC.h"
+#import "SHBugCheckVC.h"
 
 @interface SHContentVC () <UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate>
 {
@@ -62,6 +63,13 @@
 {
     inputLabel.text = @"insert text and press update";
     selectionLabel.text = @"select a row from the table";
+}
+
+-(IBAction)pushBugAction:(id)sender
+{
+    SHBugCheckVC *bugVC = [[SHBugCheckVC alloc] initWithNibName:@"SHBugCheckVC" bundle:nil];
+    
+    [self.navigationController pushViewController:bugVC animated:YES];
 }
 
 #pragma mark - tableview datasource

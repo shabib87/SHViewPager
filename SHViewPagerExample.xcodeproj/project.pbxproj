@@ -49,6 +49,8 @@
 		F0041B22192553570093FEAB /* menu9_h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0041B10192553570093FEAB /* menu9_h@2x.png */; };
 		F0041B23192553570093FEAB /* menu9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0041B11192553570093FEAB /* menu9@2x.png */; };
 		F0041B251925686F0093FEAB /* horizontal_line_moving@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0041B241925686F0093FEAB /* horizontal_line_moving@2x.png */; };
+		F0669485195D99DB0069E566 /* SHBugCheckVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F0669483195D99DB0069E566 /* SHBugCheckVC.m */; };
+		F0669486195D99DB0069E566 /* SHBugCheckVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0669484195D99DB0069E566 /* SHBugCheckVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +116,9 @@
 		F0041B10192553570093FEAB /* menu9_h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu9_h@2x.png"; sourceTree = "<group>"; };
 		F0041B11192553570093FEAB /* menu9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu9@2x.png"; sourceTree = "<group>"; };
 		F0041B241925686F0093FEAB /* horizontal_line_moving@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "horizontal_line_moving@2x.png"; sourceTree = "<group>"; };
+		F0669482195D99DB0069E566 /* SHBugCheckVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHBugCheckVC.h; sourceTree = "<group>"; };
+		F0669483195D99DB0069E566 /* SHBugCheckVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHBugCheckVC.m; sourceTree = "<group>"; };
+		F0669484195D99DB0069E566 /* SHBugCheckVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHBugCheckVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +180,7 @@
 		F0041AAF19252D7E0093FEAB /* SHViewPagerExample */ = {
 			isa = PBXGroup;
 			children = (
+				F0669481195D99AE0069E566 /* Push Bug Check */,
 				F0041AFA19253AF90093FEAB /* Content */,
 				F0041AF319252ECF0093FEAB /* Example 3 */,
 				F0041AE819252E850093FEAB /* Example 2 */,
@@ -295,6 +301,16 @@
 			name = Content;
 			sourceTree = "<group>";
 		};
+		F0669481195D99AE0069E566 /* Push Bug Check */ = {
+			isa = PBXGroup;
+			children = (
+				F0669482195D99DB0069E566 /* SHBugCheckVC.h */,
+				F0669483195D99DB0069E566 /* SHBugCheckVC.m */,
+				F0669484195D99DB0069E566 /* SHBugCheckVC.xib */,
+			);
+			name = "Push Bug Check";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -373,6 +389,7 @@
 			files = (
 				F0041B15192553570093FEAB /* menu2@2x.png in Resources */,
 				F0041B12192553570093FEAB /* menu1_h@2x.png in Resources */,
+				F0669486195D99DB0069E566 /* SHBugCheckVC.xib in Resources */,
 				F0041B14192553570093FEAB /* menu2_h@2x.png in Resources */,
 				F0041B1D192553570093FEAB /* menu6@2x.png in Resources */,
 				F0041B13192553570093FEAB /* menu1@2x.png in Resources */,
@@ -422,6 +439,7 @@
 				F0041ADE19252E200093FEAB /* SHViewPagerController.m in Sources */,
 				F0041AF119252EC70093FEAB /* SHImplementaion3VC.m in Sources */,
 				F0041AEC19252E9D0093FEAB /* SHImplementaion2VC.m in Sources */,
+				F0669485195D99DB0069E566 /* SHBugCheckVC.m in Sources */,
 				F0041AFE19253B190093FEAB /* SHContentVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -619,6 +637,7 @@
 				F0041AD419252D7E0093FEAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F0041AD519252D7E0093FEAB /* Build configuration list for PBXNativeTarget "SHViewPagerExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -627,6 +646,7 @@
 				F0041AD719252D7E0093FEAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

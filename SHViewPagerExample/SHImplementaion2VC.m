@@ -44,6 +44,24 @@
     [pager reloadData];
 }
 
+-(void)viewWillLayoutSubviews
+{
+    [super viewWillLayoutSubviews];
+    
+    // fixes bug for scrollview's content offset reset.
+    // check SHViewPager's reloadData method to get the idea.
+    // this is a hacky solution, any better solution is welcome.
+    // check closed issues #1 & #2 for more details.
+    // this is the example to fix the bug, to test this
+    // comment out the following lines
+    // and check what happens.
+    
+    if (menuItems.count)
+    {
+        [pager pagerWillLayoutSubviews];
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

@@ -103,6 +103,11 @@
     [self addGestureRecognizer:leftSwipe];
 }
 
+-(void)pagerWillLayoutSubviews
+{
+    [self moveToTargetIndex];
+}
+
 #pragma mark - reload data
 
 -(void)reloadData
@@ -125,6 +130,14 @@
     }
     
     self.containerViewController = [self.dataSource containerControllerForViewPager:self];
+    
+    // is supposed to fix bug for scrollview's content offset reset for iOS 7
+    // but somehow doesn't work
+    if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1)
+    {
+        self.containerViewController.automaticallyAdjustsScrollViewInsets = NO;
+    }
+    
     [self setIndicatorImage];
     [self createPages];
 }
