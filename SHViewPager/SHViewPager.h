@@ -99,6 +99,14 @@ typedef NS_ENUM(NSInteger, SHViewPagerMenuWidthType) {
 // if not implemented SHViewPagerMenuWidthTypeDefault will be counted
 - (SHViewPagerMenuWidthType)menuWidthTypeInViewPager:(SHViewPager *)viewPager;
 
+// background color for the top bar
+// if not implemented [UIColor whiteColor] will be used
+- (UIColor *)colorForMenuInViewPager:(SHViewPager *)viewPager;
+
+// font for the menu
+// if not implemented, the system font will be used
+- (UIFont *)fontForMenu:(SHViewPager *)viewPager;
+
 @end
 
 @protocol SHViewPagerDelegate <NSObject>

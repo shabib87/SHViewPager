@@ -78,6 +78,15 @@
     
     topTabScroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width, 44)];
     
+    if ( [self.dataSource respondsToSelector:@selector(colorForMenuInViewPager:)] )
+    {
+        topTabScroll.backgroundColor = [self.dataSource colorForMenuInViewPager:self];
+    }
+    else
+    {
+        topTabScroll.backgroundColor = [UIColor whiteColor];
+    }
+
     indexIndicatorImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 44, self.bounds.size.width, 7)];
     
     headerTitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 51, self.bounds.size.width, 20)];
@@ -188,9 +197,18 @@
             [catButton setTitle:buttonTitle forState:UIControlStateNormal];
             [catButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
             
-            catButton.titleLabel.font = [UIFont systemFontOfSize:12.0f];
+            if ( [self.dataSource respondsToSelector:@selector(fontForMenu:)] )
+            {
+                catButton.titleLabel.font = [self.dataSource fontForMenu:self];
+            }
+            else
+            {
+                catButton.titleLabel.font = [UIFont systemFontOfSize:12.0f];
+            }
+            
             catButton.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
             catButton.titleLabel.numberOfLines = 0;
+            catButton.titleLabel.textAlignment = NSTextAlignmentCenter;
         }
         
         if ([self.dataSource respondsToSelector:@selector(viewPager:imageForPageMenuAtIndex:)] && (![self.dataSource respondsToSelector:@selector(viewPager:titleForPageMenuAtIndex:)] || ![self.dataSource viewPager:self titleForPageMenuAtIndex:i]))
