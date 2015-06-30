@@ -102,7 +102,11 @@
     
     UISwipeGestureRecognizer *leftSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(leftSwipeAction:)];
     leftSwipe.direction = UISwipeGestureRecognizerDirectionLeft;
-    
+
+    // Prevent SHViewPager from blocking tap to scroll to top gestures in sub views    
+    topTabScroll.scrollsToTop = NO;
+    contentScroll.scrollsToTop = NO;
+
     [self addSubview:topTabScroll];
     [self addSubview:indexIndicatorImageView];
     [self addSubview:headerTitleLabel];
