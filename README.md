@@ -9,7 +9,7 @@ It has been two years since I have created this control and a lot have changed s
 
 I am a little short of time to do all these things at this moment!
 
-I really appriciate your time and contribution, thanks!
+I really appreciate your time and contribution, thanks!
 
 ##SHViewPager
 
