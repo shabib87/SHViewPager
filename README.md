@@ -3,6 +3,14 @@ SHViewPagerExample
 
 - A simple view pager for iOS. Compatible with iOS 6.0 or later.
 
+##Attention
+
+I need your help to keep this library going. Please contribute to support latest iOS SDK, Auto Layout, Interface Orientation and Cocoa pods.
+
+I am a little short of time to do all these things at this moment!
+
+I really appriciate your time and contribution, thanks!
+
 ##SHViewPager
 
 `version 1.0`, compatible with iOS 6.0 or, later
