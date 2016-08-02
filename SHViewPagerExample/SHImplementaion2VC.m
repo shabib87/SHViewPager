@@ -93,19 +93,19 @@
 
 - (UIImage *)viewPager:(SHViewPager *)viewPager imageForPageMenuAtIndex:(NSInteger)index
 {
-    NSString *imageName = [NSString stringWithFormat:@"menu%d.png", index + 1];
+    NSString *imageName = [NSString stringWithFormat:@"menu%ld.png", index + 1];
     return [UIImage imageNamed:imageName];
 }
 
 - (UIImage *)viewPager:(SHViewPager *)viewPager highlitedImageForPageMenuAtIndex:(NSInteger)index
 {
-    NSString *imageName = [NSString stringWithFormat:@"menu%d_h.png", index + 1];
+    NSString *imageName = [NSString stringWithFormat:@"menu%ld_h.png", index + 1];
     return [UIImage imageNamed:imageName];
 }
 
 - (UIImage *)viewPager:(SHViewPager *)viewPager selectedImageForPageMenuAtIndex:(NSInteger)index
 {
-    NSString *imageName = [NSString stringWithFormat:@"menu%d_h.png", index + 1];
+    NSString *imageName = [NSString stringWithFormat:@"menu%ld_h.png", index + 1];
     return [UIImage imageNamed:imageName];
 }
 
@@ -128,12 +128,12 @@
 
 - (void)viewPager:(SHViewPager *)viewPager willMoveToPageAtIndex:(NSInteger)toIndex fromIndex:(NSInteger)fromIndex
 {
-    NSLog(@"content will move to page %d from page: %d", toIndex, fromIndex);
+    NSLog(@"content will move to page %ld from page: %ld", toIndex, (long)fromIndex);
 }
 
 - (void)viewPager:(SHViewPager *)viewPager didMoveToPageAtIndex:(NSInteger)toIndex fromIndex:(NSInteger)fromIndex
 {
-    NSLog(@"content moved to page %d from page: %d", toIndex, fromIndex);
+    NSLog(@"content moved to page %ld from page: %ld", toIndex, (long)fromIndex);
 }
 
 @end

@@ -252,9 +252,9 @@
     }
 }
 
--(void)setUpContentViewForTargetIndex:(int)index
+-(void)setUpContentViewForTargetIndex:(NSInteger)index
 {
-    NSString *key = [NSString stringWithFormat:@"contentView-%d",index];
+    NSString *key = [NSString stringWithFormat:@"contentView-%ld",index];
     
     if ([_contentViewControllers objectForKey:key])
     {

@@ -112,12 +112,12 @@
 
 - (void)viewPager:(SHViewPager *)viewPager willMoveToPageAtIndex:(NSInteger)toIndex fromIndex:(NSInteger)fromIndex
 {
-    NSLog(@"content will move to page %d from page: %d", toIndex, fromIndex);
+    NSLog(@"content will move to page %ld from page: %ld", toIndex, fromIndex);
 }
 
 - (void)viewPager:(SHViewPager *)viewPager didMoveToPageAtIndex:(NSInteger)toIndex fromIndex:(NSInteger)fromIndex
 {
-    NSLog(@"content moved to page %d from page: %d", toIndex, fromIndex);
+    NSLog(@"content moved to page %ld from page: %ld", toIndex, fromIndex);
 }
 
 @end
