@@ -49,6 +49,7 @@
 		F0041B22192553570093FEAB /* menu9_h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0041B10192553570093FEAB /* menu9_h@2x.png */; };
 		F0041B23192553570093FEAB /* menu9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0041B11192553570093FEAB /* menu9@2x.png */; };
 		F0041B251925686F0093FEAB /* horizontal_line_moving@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0041B241925686F0093FEAB /* horizontal_line_moving@2x.png */; };
+		F06077DD1D507C79004D9186 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F06077DC1D507C79004D9186 /* .gitignore */; };
 		F0669485195D99DB0069E566 /* SHBugCheckVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F0669483195D99DB0069E566 /* SHBugCheckVC.m */; };
 		F0669486195D99DB0069E566 /* SHBugCheckVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0669484195D99DB0069E566 /* SHBugCheckVC.xib */; };
 /* End PBXBuildFile section */
@@ -116,6 +117,7 @@
 		F0041B10192553570093FEAB /* menu9_h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu9_h@2x.png"; sourceTree = "<group>"; };
 		F0041B11192553570093FEAB /* menu9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu9@2x.png"; sourceTree = "<group>"; };
 		F0041B241925686F0093FEAB /* horizontal_line_moving@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "horizontal_line_moving@2x.png"; sourceTree = "<group>"; };
+		F06077DC1D507C79004D9186 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		F0669482195D99DB0069E566 /* SHBugCheckVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHBugCheckVC.h; sourceTree = "<group>"; };
 		F0669483195D99DB0069E566 /* SHBugCheckVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHBugCheckVC.m; sourceTree = "<group>"; };
 		F0669484195D99DB0069E566 /* SHBugCheckVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHBugCheckVC.xib; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 		F0041A9D19252D7D0093FEAB = {
 			isa = PBXGroup;
 			children = (
+				F06077DC1D507C79004D9186 /* .gitignore */,
 				F0041ADF19252E350093FEAB /* Images */,
 				F0041AD819252E200093FEAB /* SHViewPager */,
 				F0041AAF19252D7E0093FEAB /* SHViewPagerExample */,
@@ -395,6 +398,7 @@
 				F0041B13192553570093FEAB /* menu1@2x.png in Resources */,
 				F0041AED19252E9D0093FEAB /* SHImplementaion2VC.xib in Resources */,
 				F0041B23192553570093FEAB /* menu9@2x.png in Resources */,
+				F06077DD1D507C79004D9186 /* .gitignore in Resources */,
 				F0041AE119252E350093FEAB /* horizontal_line@2x.png in Resources */,
 				F0041B20192553570093FEAB /* menu8_h@2x.png in Resources */,
 				F0041B22192553570093FEAB /* menu9_h@2x.png in Resources */,
