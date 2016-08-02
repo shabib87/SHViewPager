@@ -565,7 +565,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SHViewPagerExample/SHViewPagerExample-Prefix.pch";
 				INFOPLIST_FILE = "SHViewPagerExample/SHViewPagerExample-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sh.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codewithshabib.shviewpagerexample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -579,7 +579,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SHViewPagerExample/SHViewPagerExample-Prefix.pch";
 				INFOPLIST_FILE = "SHViewPagerExample/SHViewPagerExample-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sh.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codewithshabib.shviewpagerexample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
