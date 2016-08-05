@@ -234,34 +234,35 @@
     }
 }
 
--(void)setUpFirstContentView
-{
+-(void)setUpFirstContentView {
+    
     [self setUpContentViewForTargetIndex:0];
     [self setUpHeaderTitleTextAtIndex:0];
     
-    if ([self.dataSource respondsToSelector:@selector(viewPager:selectedImageForPageMenuAtIndex:)] && [self.dataSource respondsToSelector:@selector(viewPager:imageForPageMenuAtIndex:)])
-    {
+    if ([self.dataSource respondsToSelector:@selector(viewPager:selectedImageForPageMenuAtIndex:)] && [self.dataSource respondsToSelector:@selector(viewPager:imageForPageMenuAtIndex:)]) {
+        
         UIImage *buttonImage = [self.dataSource viewPager:self selectedImageForPageMenuAtIndex:0];
         UIButton *button = [_menuButtons objectAtIndex:0];
         [button setImage:buttonImage forState:UIControlStateNormal];
+        [self notifyDelegateAboutFirstContentPageLoaded];
     }
+}
+
+- (void)notifyDelegateAboutFirstContentPageLoaded {
     
-    if ([self.delegate respondsToSelector:@selector(firstContentPageLoadedForViewPager:)])
-    {
+    if ([self.delegate respondsToSelector:@selector(firstContentPageLoadedForViewPager:)]) {
+        
         [delegate firstContentPageLoadedForViewPager:self];
     }
 }
 
--(void)setUpContentViewForTargetIndex:(NSInteger)index
-{
+-(void)setUpContentViewForTargetIndex:(NSInteger)index {
+    
     NSString *key = [NSString stringWithFormat:@"contentView-%ld",index];
     
-    if ([_contentViewControllers objectForKey:key])
-    {
-        return;
-    }
-    else
-    {
+    if ([_contentViewControllers objectForKey:key]) return;
+    else {
+        
         UIViewController *contentVC = [self.dataSource viewPager:self controllerForPageAtIndex:index];
         
         UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.bounds) * index, 0, CGRectGetWidth(self.bounds), contentScroll.bounds.size.height)];
