@@ -49,6 +49,6 @@ To display the contents, you need to call the instance method `reloadData` in yo
 
 Happy coding :)
 
-Shabib Hossain
+Shabib
 
 May 16, 2014
