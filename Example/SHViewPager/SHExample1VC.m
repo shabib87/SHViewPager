@@ -21,10 +21,9 @@
     [super viewDidLoad];
     
     menuItems = [[NSArray alloc] initWithObjects:@"menu 1", @"menu 2", @"menu 3", @"menu 4", @"menu 5", @"menu 6", @"menu 7", @"menu 8", @"menu 9", nil];
-//    [self.viewPager reloadData];
+    [self.viewPager reloadData];
 }
 
-/*
 -(void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
     
@@ -89,6 +88,5 @@
 - (void)viewPager:(SHViewPager *)viewPager didMoveToPageAtIndex:(NSInteger)toIndex fromIndex:(NSInteger)fromIndex {
     NSLog(@"content moved to page %ld from page: %ld", toIndex, fromIndex);
 }
-*/
 
 @end

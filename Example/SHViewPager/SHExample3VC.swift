@@ -15,7 +15,7 @@ class SHExample3VC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        pager.reloadData()
+//        pager.reloadData()
     }
 
     override func didReceiveMemoryWarning() {

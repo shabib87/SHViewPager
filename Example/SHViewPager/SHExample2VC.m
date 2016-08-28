@@ -54,16 +54,16 @@
 
 - (UIViewController *)viewPager:(SHViewPager *)viewPager controllerForPageAtIndex:(NSInteger)index {
     SHContentViewController *contentVC = [[SHContentViewController alloc] initWithNibName:@"SHContentViewController" bundle:nil];
-    contentVC.selectionIndicatorString = [NSString stringWithFormat:@"Currently Selected :%ld index", index + 1];
+    contentVC.selectionIndicatorString = [NSString stringWithFormat:@"Currently Selected :index %ld", index + 1];
     return contentVC;
 }
 
 - (UIImage *)indexIndicatorImageForViewPager:(SHViewPager *)viewPager {
-    return [UIImage imageNamed:@"Selected"];
+    return [UIImage imageNamed:@"IndexIndicatorIcon"];
 }
 
 - (UIImage *)indexIndicatorImageDuringScrollAnimationForViewPager:(SHViewPager *)viewPager {
-    return [UIImage imageNamed:@"Moving"];
+    return [UIImage imageNamed:@"IndexIndicatorMovingIcon"];
 }
 
 - (UIImage *)viewPager:(SHViewPager *)viewPager imageForPageMenuAtIndex:(NSInteger)index {

@@ -27,9 +27,10 @@ A simple view pager for iOS. Compatible with iOS 8.0 or later, that imitates the
   s.source_files = 'SHViewPager/Classes/**/*'
   
   s.resource_bundles = {
-     'SHViewPager' => 'Pod/**/*.xib'
+     'SHViewPager' => 'SHViewPager/Assets/*.xib'
   }
 
-  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'SHViewPager/Classes/**/*.h'
   s.frameworks = 'UIKit', 'Foundation'
+  s.dependency 'PodAsset'
 end

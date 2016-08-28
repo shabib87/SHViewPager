@@ -8,6 +8,6 @@
 
 #import "SHViewPagerController.h"
 
-@interface SHExample1VC : UIViewController
+@interface SHExample1VC : SHViewPagerController
 
 @end

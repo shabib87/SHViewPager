@@ -34,23 +34,23 @@
 
 @implementation SHViewPagerController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)loadView {
+    [super loadView];
     
-    self.viewPager = [[SHViewPager alloc] init];
-    _viewPager.dataSource = self;
-    _viewPager.delegate = self;
-    
-    [self.view addSubview:_viewPager];
-    
-    NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(_viewPager);
-    
-    // constraint with top: represents y
-    NSArray *constraints_V = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[_viewPager]-0-|" options:0 metrics:nil views:viewsDictionary];
-    // constraint with side: represents x
-    NSArray *constraints_H = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[_viewPager]-0-|" options:0 metrics:nil views:viewsDictionary];
-    [self.view addConstraints:constraints_V];
-    [self.view addConstraints:constraints_H];
+//    self.viewPager = [SHViewPager new];
+//    _viewPager.dataSource = self;
+//    _viewPager.delegate = self;
+//    
+//    [self.view addSubview:_viewPager];
+//    
+//    NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(_viewPager);
+//    
+//    // constraint with top: represents y
+//    NSArray *constraints_V = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[_viewPager]-0-|" options:0 metrics:nil views:viewsDictionary];
+//    // constraint with side: represents x
+//    NSArray *constraints_H = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[_viewPager]-0-|" options:0 metrics:nil views:viewsDictionary];
+//    [self.view addConstraints:constraints_V];
+//    [self.view addConstraints:constraints_H];
 }
 
 #pragma mark - SHViewPagerDataSource stack

@@ -22,11 +22,16 @@
   "requires_arc": true,
   "source_files": "SHViewPager/Classes/**/*",
   "resource_bundles": {
-    "SHViewPager": "Pod/**/*.xib"
+    "SHViewPager": "SHViewPager/Assets/*.xib"
   },
-  "public_header_files": "Pod/Classes/**/*.h",
+  "public_header_files": "SHViewPager/Classes/**/*.h",
   "frameworks": [
     "UIKit",
     "Foundation"
-  ]
+  ],
+  "dependencies": {
+    "PodAsset": [
+
+    ]
+  }
 }

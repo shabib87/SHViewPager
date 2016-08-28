@@ -27,6 +27,7 @@
 //
 
 #import "SHBaseView.h"
+#import "PodAsset.h"
 
 @interface SHBaseView ()
 
@@ -65,10 +66,10 @@
 - (UIView *)viewNibName:(NSString *)nibName {
     
     UIView *view = nil;
-    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"SHViewPager" ofType:@"bundle"];
+    NSString *bundlePath = [PodAsset bundlePathForPod:@"SHViewPager"];
     NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
     NSArray *objects = [bundle loadNibNamed:nibName owner:self options:nil];
-    
+
     for (id object in objects) {
         
         if ([object isKindOfClass:[UIView class]]) {

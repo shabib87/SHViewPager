@@ -2,6 +2,7 @@ use_frameworks!
 
 target 'SHViewPager_Example' do
   pod 'SHViewPager', :path => '../'
+  pod 'PodAsset'
   target 'SHViewPager_Tests' do
     pod 'Specta'
     pod 'Expecta'

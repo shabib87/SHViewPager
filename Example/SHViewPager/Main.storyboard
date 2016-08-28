@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--SHViewPagerController-->
+        <!--Example: SHViewPagerController-->
         <scene sceneID="wQg-tq-qST">
             <objects>
                 <viewController id="whP-gf-Uak" customClass="SHExample1VC" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SHViewPagerController" id="eHw-0s-PlD"/>
+                    <navigationItem key="navigationItem" title="Example: SHViewPagerController" id="eHw-0s-PlD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -92,7 +92,7 @@
                             <constraint firstItem="kNU-VX-1a2" firstAttribute="leading" secondItem="Fja-wv-UZq" secondAttribute="leading" id="wrg-eh-J8w"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Example 2" id="3Px-t4-WWd"/>
+                    <navigationItem key="navigationItem" title="Example: Image Item for Menu" id="3Px-t4-WWd"/>
                     <connections>
                         <outlet property="pager" destination="kNU-VX-1a2" id="UxA-4m-pTB"/>
                     </connections>
@@ -101,7 +101,7 @@
             </objects>
             <point key="canvasLocation" x="965" y="801"/>
         </scene>
-        <!--Example 3-->
+        <!--Example: Title Header for Menu-->
         <scene sceneID="AkT-yX-Rw0">
             <objects>
                 <viewController id="Hg2-1x-OP4" customClass="SHExample3VC" customModule="SHViewPager_Example" customModuleProvider="target" sceneMemberID="viewController">
@@ -114,7 +114,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Example 3" id="s1N-pr-Adn"/>
+                    <navigationItem key="navigationItem" title="Example: Title Header for Menu" id="s1N-pr-Adn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DYg-Nr-XiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
