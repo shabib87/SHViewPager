@@ -1,4 +1,4 @@
-SHViewPagerExample
+SHViewPager
 ==================
 
 - A simple view pager for iOS, which acts similar to android's viewPager. Compatible with iOS 6.0 or later.
