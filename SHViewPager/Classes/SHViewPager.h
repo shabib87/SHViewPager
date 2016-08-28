@@ -45,16 +45,16 @@ typedef NS_ENUM(NSInteger, SHViewPagerMenuWidthType) {
 @required
 
 /** total number of pages to be displayed by the controller */
-- (NSInteger)numberOfPagesInViewPager:(SHViewPager *)viewPager;
+- (NSInteger)numberOfPagesInViewPager:(SHViewPager  * _Nonnull)viewPager;
 
 /**
  the viewcontroller that will contain the pages, in most of the cases it will be the same viewcontroller that is acting as the datasource and delegate;
  i.e. return value will be 'self'.
  */
-- (UIViewController *)containerControllerForViewPager:(SHViewPager *)viewPager;
+- (UIViewController * _Nonnull)containerControllerForViewPager:(SHViewPager * _Nonnull)viewPager;
 
 /** the viewcontroller that is to be shown as as a page in the pager */
-- (UIViewController *)viewPager:(SHViewPager *)viewPager controllerForPageAtIndex:(NSInteger)index;
+- (UIViewController * _Nonnull)viewPager:(SHViewPager * _Nonnull)viewPager controllerForPageAtIndex:(NSInteger)index;
 
 @optional
 
@@ -63,7 +63,7 @@ typedef NS_ENUM(NSInteger, SHViewPagerMenuWidthType) {
  preferred image size is screen_width x 7;
  i.e. if app runs on iphone 5, image size should be 320x7;
  */
-- (UIImage *)indexIndicatorImageForViewPager:(SHViewPager *)viewPager;
+- (UIImage * _Nonnull)indexIndicatorImageForViewPager:(SHViewPager * _Nonnull)viewPager;
 
 /**
  the indicator image during the scrolling animation state.
@@ -71,14 +71,14 @@ typedef NS_ENUM(NSInteger, SHViewPagerMenuWidthType) {
  i.e. if app runs on iphone 5, image size should be 320x7.
  run and check example code to understand the behavior more clearly.
  */
-- (UIImage *)indexIndicatorImageDuringScrollAnimationForViewPager:(SHViewPager *)viewPager;
+- (UIImage * _Nonnull)indexIndicatorImageDuringScrollAnimationForViewPager:(SHViewPager * _Nonnull)viewPager;
 
 /**
  Important: either viewPager:imageForPageMenuAtIndex or viewPager:titleForPageMenuAtIndex has to be implemented, but not both.
  the title to be displayed on the menu button.
  don't implement if viewPager:imageForPageMenuAtIndex is already implemented.
  */
-- (NSString *)viewPager:(SHViewPager *)viewPager titleForPageMenuAtIndex:(NSInteger)index;
+- (NSString * _Nonnull)viewPager:(SHViewPager * _Nonnull)viewPager titleForPageMenuAtIndex:(NSInteger)index;
 
 /**
  the image to be displayed on the menu button.
@@ -87,13 +87,13 @@ typedef NS_ENUM(NSInteger, SHViewPagerMenuWidthType) {
  i.e. if menuWidthTypeInViewPager: returns SHViewPageMenuWidthTypeDefault, then
  image size should be 64x44 in iPhone.
  */
-- (UIImage *)viewPager:(SHViewPager *)viewPager imageForPageMenuAtIndex:(NSInteger)index;
+- (UIImage * _Nonnull)viewPager:(SHViewPager * _Nonnull)viewPager imageForPageMenuAtIndex:(NSInteger)index;
 
 /**
  the title to be displayed right below the indicator image
  if not implemented, the area should be hidden and covered by the content view
  */
-- (NSString *)viewPager:(SHViewPager *)viewPager headerTitleForPageMenuAtIndex:(NSInteger)index;
+- (NSString * _Nonnull)viewPager:(SHViewPager * _Nonnull)viewPager headerTitleForPageMenuAtIndex:(NSInteger)index;
 
 /**
  the image to be displayed for the menu button highlited state.
@@ -102,7 +102,7 @@ typedef NS_ENUM(NSInteger, SHViewPagerMenuWidthType) {
  i.e. if menuWidthTypeInViewPager: returns SHViewPageMenuWidthTypeDefault, then
  image size should be 64x44 in iPhone.
  */
-- (UIImage *)viewPager:(SHViewPager *)viewPager highlitedImageForPageMenuAtIndex:(NSInteger)index;
+- (UIImage * _Nonnull)viewPager:(SHViewPager * _Nonnull)viewPager highlitedImageForPageMenuAtIndex:(NSInteger)index;
 
 /**
  the image to be displayed for the menu button selected state.
@@ -111,25 +111,25 @@ typedef NS_ENUM(NSInteger, SHViewPagerMenuWidthType) {
  i.e. if menuWidthTypeInViewPager: returns SHViewPageMenuWidthTypeDefault, then
  image size should be 64x44 in iPhone.
  */
-- (UIImage *)viewPager:(SHViewPager *)viewPager selectedImageForPageMenuAtIndex:(NSInteger)index;
+- (UIImage * _Nonnull)viewPager:(SHViewPager *  _Nonnull)viewPager selectedImageForPageMenuAtIndex:(NSInteger)index;
 
 /**
  menu width type for the top bar.
  if not implemented SHViewPagerMenuWidthTypeDefault will be counted.
  */
-- (SHViewPagerMenuWidthType)menuWidthTypeInViewPager:(SHViewPager *)viewPager;
+- (SHViewPagerMenuWidthType)menuWidthTypeInViewPager:(SHViewPager * _Nonnull)viewPager;
 
 /**
  background color for the top bar.
  if not implemented [UIColor whiteColor] will be used.
  */
-- (UIColor *)colorForMenuInViewPager:(SHViewPager *)viewPager;
+- (UIColor * _Nonnull)colorForMenuInViewPager:(SHViewPager * _Nonnull)viewPager;
 
 /**
  font for the menu.
  if not implemented, the system font will be used.
  */
-- (UIFont *)fontForMenu:(SHViewPager *)viewPager;
+- (UIFont * _Nonnull)fontForMenu:(SHViewPager * _Nonnull)viewPager;
 
 @end
 
@@ -138,26 +138,26 @@ typedef NS_ENUM(NSInteger, SHViewPagerMenuWidthType) {
 @optional
 
 /** called when page is about to move. */
-- (void)viewPager:(SHViewPager *)viewPager willMoveToPageAtIndex:(NSInteger)toIndex fromIndex:(NSInteger)fromIndex;
+- (void)viewPager:(SHViewPager * _Nonnull)viewPager willMoveToPageAtIndex:(NSInteger)toIndex fromIndex:(NSInteger)fromIndex;
 
 /** called when a page has moved. */
-- (void)viewPager:(SHViewPager *)viewPager didMoveToPageAtIndex:(NSInteger)toIndex fromIndex:(NSInteger)fromIndex;
+- (void)viewPager:(SHViewPager * _Nonnull)viewPager didMoveToPageAtIndex:(NSInteger)toIndex fromIndex:(NSInteger)fromIndex;
 
 /** called when the first page is loaded. */
-- (void)firstContentPageLoadedForViewPager:(SHViewPager *)viewPager;
+- (void)firstContentPageLoadedForViewPager:(SHViewPager * _Nonnull)viewPager;
 
 @end
 
 @interface SHViewPager : SHBaseView
 
-@property (nonatomic, weak) IBOutlet id <SHViewPagerDataSource> dataSource;
-@property (nonatomic, weak) IBOutlet id <SHViewPagerDelegate> delegate;
+@property (nonatomic, nonnull) IBOutlet id <SHViewPagerDataSource> dataSource;
+@property (nonatomic, nonnull) IBOutlet id <SHViewPagerDelegate> delegate;
 
 /** returns the array of the menu buttons. */
-@property (nonatomic, readonly) NSArray *menuButtons;
+@property (nonatomic, readonly, nonnull) NSArray *menuButtons;
 
 /** returns a dictionay of the content viewcontrollers, key for the value is set as their index. */
-@property (nonatomic, readonly) NSDictionary *contentViewControllers;
+@property (nonatomic, readonly, nonnull) NSDictionary *contentViewControllers;
 
 /**
  populates or, re-populates the pager contents.

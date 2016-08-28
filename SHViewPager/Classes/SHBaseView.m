@@ -65,7 +65,9 @@
 - (UIView *)viewNibName:(NSString *)nibName {
     
     UIView *view = nil;
-    NSArray *objects = [[NSBundle mainBundle] loadNibNamed:nibName owner:self options:nil];
+    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"SHViewPager" ofType:@"bundle"];
+    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+    NSArray *objects = [bundle loadNibNamed:nibName owner:self options:nil];
     
     for (id object in objects) {
         

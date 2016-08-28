@@ -25,13 +25,6 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>008A0D7646E6E0847C0F9258F704A31F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A3310F15FE566D54ACD36064C1C45F35</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
 		<key>00ADDBCA9E516B429C7877EB5AED2DCE</key>
 		<dict>
 			<key>buildConfigurationList</key>
@@ -53,7 +46,7 @@
 			<key>productName</key>
 			<string>Specta</string>
 			<key>productReference</key>
-			<string>3994DF171593904D16DCE2B0943CB40E</string>
+			<string>876BC7F8BE83840724CDA2A77EA75C9A</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
@@ -164,14 +157,17 @@
 			<string>E6FBFAE4D2BB6E3816AFE808715D9D6E</string>
 			<key>buildPhases</key>
 			<array>
-				<string>434A4D36741615C91940AA7AE71FB864</string>
-				<string>8FFEE6E54D76A59FCF21B30F54925340</string>
+				<string>140755D47F4C1E9EF8CEF284987C4D7D</string>
+				<string>5B8B4AF3190EA7F2DF44225A91ED4E8F</string>
+				<string>6DC4F72D46FD59C4F0706D10C4983224</string>
 				<string>713FBADDA7F00B7415C85D95551C09EF</string>
 			</array>
 			<key>buildRules</key>
 			<array/>
 			<key>dependencies</key>
-			<array/>
+			<array>
+				<string>60C0B51B54D1A7E63A351CFEB10C9777</string>
+			</array>
 			<key>isa</key>
 			<string>PBXNativeTarget</string>
 			<key>name</key>
@@ -179,7 +175,7 @@
 			<key>productName</key>
 			<string>SHViewPager</string>
 			<key>productReference</key>
-			<string>9C6C2DE2289EB75125FB7457192E4FF1</string>
+			<string>BDEB53C001855BA81C7F1F66373FDC84</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
@@ -195,19 +191,6 @@
 			<string>EXPMatchers+equal.m</string>
 			<key>path</key>
 			<string>Expecta/Matchers/EXPMatchers+equal.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>07BA87837FF97E3191B0F74D140F76A0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SHViewPager.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -384,9 +367,29 @@
 			<key>productName</key>
 			<string>Expecta</string>
 			<key>productReference</key>
-			<string>D07F262613E9DFED527192A9796CE543</string>
+			<string>9EAD7C5340ADE637741075E185097E20</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>0E43E3D8116EBFBE17FBA1DAD206560D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9EAD7C5340ADE637741075E185097E20</string>
+				<string>FDC932C72F844509877E3BBCD11D1183</string>
+				<string>FD6A983217A896FDFDC779FC6B41C46E</string>
+				<string>700AA7A00B59BD31314E44BD89E213E5</string>
+				<string>CE8DF4C58986B1B2D5A8605A157A5E1F</string>
+				<string>797A4722793B01CC5B883914FF5614EA</string>
+				<string>BDEB53C001855BA81C7F1F66373FDC84</string>
+				<string>876BC7F8BE83840724CDA2A77EA75C9A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>0EBFA5FBE4953A83B677CE2A75746761</key>
 		<dict>
@@ -399,19 +402,6 @@
 				<key>COMPILER_FLAGS</key>
 				<string>-fno-objc-arc</string>
 			</dict>
-		</dict>
-		<key>0F15BD5A66C8E065582D92FDDB5F6F4A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SHViewPager-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>0F94F5B0ABB3252B9275B7C129EC7A26</key>
 		<dict>
@@ -448,6 +438,28 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>1278C7408C218467B20EA9B45B3FAB18</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>28BC3E5159AE44605E89DE8FF7205AD9</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>SHViewPager</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>bundle</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
 		<key>1312A7D381C51428CF481E33E3D37901</key>
 		<dict>
 			<key>fileRef</key>
@@ -473,6 +485,22 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>140755D47F4C1E9EF8CEF284987C4D7D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>ACF761E666DBB5DA7913A9B0AA1CECCB</string>
+				<string>2AE5AEAD2475B3756F1F420D921FCB8C</string>
+				<string>5F47E7BBA74E8DD5B8A5206E0BF2D4AD</string>
+				<string>3755C842AC1A92D984D433F472D2EB12</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>14517AB91B16B5D797F4374300AFA89F</key>
 		<dict>
@@ -674,16 +702,16 @@
 				</array>
 			</dict>
 		</dict>
-		<key>1A39FC5B349970D2A720DF93B6FEBABD</key>
+		<key>1A914A6458515CFD8F9889C35E2B38F9</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>SHViewPager.m</string>
+			<string>SHViewPager-prefix.pch</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -726,13 +754,6 @@
 				<string>-fno-objc-arc</string>
 			</dict>
 		</dict>
-		<key>1B2D2C8F1C43D5B80FB1CB6C006864D7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF75645B2495DAA9335802AABD0E91FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
 		<key>1B5BFD6EC1068EBC586F5E566543AED5</key>
 		<dict>
 			<key>containerPortal</key>
@@ -760,6 +781,13 @@
 				</array>
 			</dict>
 		</dict>
+		<key>1C1A9A5208317FAEA32785F8587A90F3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>797A4722793B01CC5B883914FF5614EA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>1E6CB3108E7BCD0A0126E78B257E79A2</key>
 		<dict>
 			<key>fileRef</key>
@@ -777,19 +805,6 @@
 			<string>sourcecode.c.h</string>
 			<key>path</key>
 			<string>Specta-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1F28F81AD9846A16E643931495825AC6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SHViewPager-prefix.pch</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -866,7 +881,7 @@
 		<key>22C4D61DE8963DE1FD93328AD58C653C</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>B078B990A468DB9E1447DC6A30783F70</string>
+			<string>28BC3E5159AE44605E89DE8FF7205AD9</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -1057,6 +1072,26 @@
 				</array>
 			</dict>
 		</dict>
+		<key>27BDA6669044981BC1C06E1DF40E9FA9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CFB599D180F8041BE5271438B1197E39</string>
+				<string>D4F4B410BDF1823D9CE0782CB157961F</string>
+				<string>596FC03E1AD7B4500EC2F2BC87D90E35</string>
+				<string>C91681CD5C3D5779F32FF67216081022</string>
+				<string>DBC3C63ACC2AD7D045A84A491D97DB54</string>
+				<string>65D57CA07F1B8885D31144FDE7521A1A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Classes</string>
+			<key>path</key>
+			<string>Classes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>28980D1268BF5D8196D266D4FC2F50E4</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1069,6 +1104,19 @@
 			<string>EXPMatchers+beNil.h</string>
 			<key>path</key>
 			<string>Expecta/Matchers/EXPMatchers+beNil.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>28BC3E5159AE44605E89DE8FF7205AD9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>SHViewPager.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1112,6 +1160,13 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>2AE5AEAD2475B3756F1F420D921FCB8C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7984F978BC2F848C2D457EF11E3F18AA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>2B0529E4A817BCF5BF22ADA77866D0B7</key>
 		<dict>
@@ -1365,6 +1420,17 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
+		<key>31C81E5799B668F428CE477B30B7FD83</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
 		<key>333D034462DA0EE6A13E42FBBB07F3AC</key>
 		<dict>
 			<key>buildConfigurations</key>
@@ -1453,6 +1519,13 @@
 				</array>
 			</dict>
 		</dict>
+		<key>3755C842AC1A92D984D433F472D2EB12</key>
+		<dict>
+			<key>fileRef</key>
+			<string>65D57CA07F1B8885D31144FDE7521A1A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>37A2D0F8493469EF2495FC689440F079</key>
 		<dict>
 			<key>fileRef</key>
@@ -1490,7 +1563,7 @@
 			<key>productName</key>
 			<string>Pods-SHViewPager_Example</string>
 			<key>productReference</key>
-			<string>4E4419F2A6F4CE160737AB4812482002</string>
+			<string>700AA7A00B59BD31314E44BD89E213E5</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
@@ -1525,6 +1598,17 @@
 			<string>sourcecode.c.h</string>
 			<key>path</key>
 			<string>FBSnapshotTestCase-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>389BCD357068B594283EC2F09DF3D4B4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>SHViewPager.modulemap</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1569,28 +1653,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>3994DF171593904D16DCE2B0943CB40E</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Specta.framework</string>
-			<key>path</key>
-			<string>Specta.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>3996E3DCD875A7E71858289B3028BC04</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1A39FC5B349970D2A720DF93B6FEBABD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 		<key>3A35BE0267849F84514C1480B43A470C</key>
 		<dict>
@@ -1764,6 +1826,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>3FE641E54AF058F38ADB7C17C40353CC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>403292D82DA62291204BF59524BC4EDB</key>
 		<dict>
 			<key>fileRef</key>
@@ -1811,21 +1886,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>428E7509D6F61961DA0F8EFF8A4267BF</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>FBSnapshotTestCase.framework</string>
-			<key>path</key>
-			<string>FBSnapshotTestCase.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>428F5AA64CB12DFC1C335C47914064E0</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1853,23 +1913,6 @@
 			<string>Expecta/Matchers/EXPMatchers+postNotification.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>434A4D36741615C91940AA7AE71FB864</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>1B2D2C8F1C43D5B80FB1CB6C006864D7</string>
-				<string>D7A558C3677A98DA9B8192B18435A4FF</string>
-				<string>3996E3DCD875A7E71858289B3028BC04</string>
-				<string>008A0D7646E6E0847C0F9258F704A31F</string>
-				<string>4DCB2961035796FFEE62A3FB04E7A9DB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
 		</dict>
 		<key>43D0C843C76C84AA3308E4554D59848C</key>
 		<dict>
@@ -2050,30 +2093,30 @@
 			<key>remoteInfo</key>
 			<string>SHViewPager</string>
 		</dict>
-		<key>4BD0D1DDA079EFE763AF0D5CB892789B</key>
+		<key>4CE8DAF217135FA6E69E9E8A38E5F868</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>buildConfigurationList</key>
+			<string>9F89C52EC7F96E26850903314FD361B9</string>
+			<key>buildPhases</key>
+			<array>
+				<string>31C81E5799B668F428CE477B30B7FD83</string>
+				<string>A23B358A853ED2875101C685A695F8EC</string>
+				<string>5217966D8ABD65410839F7F1146F10AF</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>SHViewPager.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4C3642318892CD120517B6594AF77C5B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6CF084266D04F9AD0F1FFD71C6AFC3FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4DCB2961035796FFEE62A3FB04E7A9DB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AF3F4ABE4559944B817A654A6BAD99E6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>SHViewPager-SHViewPager</string>
+			<key>productName</key>
+			<string>SHViewPager-SHViewPager</string>
+			<key>productReference</key>
+			<string>797A4722793B01CC5B883914FF5614EA</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle</string>
 		</dict>
 		<key>4E00EBA89EDA7D28D20E2492718F1603</key>
 		<dict>
@@ -2082,26 +2125,11 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>4E4419F2A6F4CE160737AB4812482002</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_SHViewPager_Example.framework</string>
-			<key>path</key>
-			<string>Pods_SHViewPager_Example.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>4E9795D9D61C26B5B4C7E7F94C298257</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>A2349E0DFB3F8A0A8FF0E49EC9801003</string>
+				<string>975617B3C317AE93611184501BC3B302</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -2173,6 +2201,17 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>5217966D8ABD65410839F7F1146F10AF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>5267376A130B688AA8DC669933C16D9A</key>
 		<dict>
@@ -2390,19 +2429,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>574129B18FAC316DFA6BECC42FA00010</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SHBaseView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>57AF203F6B98E185A822F5F0BC6DB151</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -2446,6 +2472,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>596FC03E1AD7B4500EC2F2BC87D90E35</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SHViewPager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>5B2D4A621D3DA971A474776AF36BB073</key>
 		<dict>
 			<key>fileRef</key>
@@ -2458,21 +2497,26 @@
 				<string>-fno-objc-arc</string>
 			</dict>
 		</dict>
-		<key>5B9BED08C9A13FA76D2FAB4181F421F0</key>
+		<key>5B8B4AF3190EA7F2DF44225A91ED4E8F</key>
 		<dict>
-			<key>children</key>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
 			<array>
-				<string>BCF9D5ED3EDA2791B0D629AE6D0DFE1B</string>
-				<string>B4B2882336AFFDA91B871159DF11117F</string>
+				<string>DC2A534D7509CCE74F330292CED6C60D</string>
+				<string>5C107C92C2E481227B497B55210351A5</string>
 			</array>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>SHViewPager</string>
-			<key>path</key>
-			<string>SHViewPager</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>5C107C92C2E481227B497B55210351A5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9B097D27B5AD98A52CC165EFAE43F2B5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>5C8175700E46E467915FC3D84336F6A3</key>
 		<dict>
@@ -2486,19 +2530,6 @@
 			<string>SPTSpec.m</string>
 			<key>path</key>
 			<string>Specta/Specta/SPTSpec.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5D8196D2D2199690CC7946A2F76385C0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2531,6 +2562,13 @@
 				</array>
 			</dict>
 		</dict>
+		<key>5F47E7BBA74E8DD5B8A5206E0BF2D4AD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C91681CD5C3D5779F32FF67216081022</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>5F6FC4706E7444375E677294DFEEB5C6</key>
 		<dict>
 			<key>fileRef</key>
@@ -2551,6 +2589,17 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>60C0B51B54D1A7E63A351CFEB10C9777</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>SHViewPager-SHViewPager</string>
+			<key>target</key>
+			<string>4CE8DAF217135FA6E69E9E8A38E5F868</string>
+			<key>targetProxy</key>
+			<string>B8E709BB4B71DA8434EF84B33BAF354F</string>
 		</dict>
 		<key>610249954D9E36ED0639D3B5DB4157F3</key>
 		<dict>
@@ -2690,6 +2739,19 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>65D57CA07F1B8885D31144FDE7521A1A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SHViewPagerController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>66A27898E989A3FA5C15AA671C4536F0</key>
 		<dict>
@@ -2837,6 +2899,19 @@
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
 		</dict>
+		<key>6DC4F72D46FD59C4F0706D10C4983224</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1C1A9A5208317FAEA32785F8587A90F3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
 		<key>6E1D978790705E137FDE439AA68DD3AA</key>
 		<dict>
 			<key>fileRef</key>
@@ -2889,6 +2964,21 @@
 				<key>COMPILER_FLAGS</key>
 				<string>-fno-objc-arc</string>
 			</dict>
+		</dict>
+		<key>700AA7A00B59BD31314E44BD89E213E5</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_SHViewPager_Example.framework</string>
+			<key>path</key>
+			<string>Pods_SHViewPager_Example.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>707C1B7180164DF6560719973AEC92C1</key>
 		<dict>
@@ -3062,21 +3152,6 @@
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
 			<string>Release</string>
-		</dict>
-		<key>7533B1E2E8F10D625CCCE2EA46E5C106</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_SHViewPager_Example_SHViewPager_Tests.framework</string>
-			<key>path</key>
-			<string>Pods_SHViewPager_Example_SHViewPager_Tests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>757732CABCCD0D3A3DECF0188321177D</key>
 		<dict>
@@ -3315,6 +3390,34 @@
 				</array>
 			</dict>
 		</dict>
+		<key>797A4722793B01CC5B883914FF5614EA</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>SHViewPager.bundle</string>
+			<key>path</key>
+			<string>SHViewPager.bundle</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>7984F978BC2F848C2D457EF11E3F18AA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SHViewPager-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>79A18C1EB2EC337A87C21C89732639D4</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -3409,7 +3512,7 @@
 				<string>4E9795D9D61C26B5B4C7E7F94C298257</string>
 				<string>1922ED2492F2CD5F07BAE0E198724705</string>
 				<string>08D965B0F9B0084EEFBE7A581FFDD562</string>
-				<string>A773012C1EEDE6444EA22560378AD74F</string>
+				<string>0E43E3D8116EBFBE17FBA1DAD206560D</string>
 				<string>1FBE1D9FFDA84D5D7738B8E7D7BD40C2</string>
 			</array>
 			<key>isa</key>
@@ -3609,21 +3712,6 @@
 			<key>targetProxy</key>
 			<string>DE82DAB2F21CF09E3508B659447C6D36</string>
 		</dict>
-		<key>8447A1C0B8675BCCDE4ADBD4D3324B32</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Expecta_Snapshots.framework</string>
-			<key>path</key>
-			<string>Expecta_Snapshots.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>845DA643BAC094D83AA08D33F1BFD783</key>
 		<dict>
 			<key>containerPortal</key>
@@ -3686,6 +3774,21 @@
 				</array>
 			</dict>
 		</dict>
+		<key>876BC7F8BE83840724CDA2A77EA75C9A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Specta.framework</string>
+			<key>path</key>
+			<string>Specta.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
 		<key>877F2FFF986A9541D75AB6A61D61FC6E</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -3734,7 +3837,7 @@
 		<key>8B3E368195B8BFE437057055C49B2306</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>B078B990A468DB9E1447DC6A30783F70</string>
+			<string>28BC3E5159AE44605E89DE8FF7205AD9</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -3852,19 +3955,6 @@
 			<string>Expecta/EXPExpect.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8FFEE6E54D76A59FCF21B30F54925340</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>4C3642318892CD120517B6594AF77C5B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
 		</dict>
 		<key>90189F0AFADDD1AA459620F0C7D88568</key>
 		<dict>
@@ -4004,7 +4094,7 @@
 		<key>92FADB6DCDBFEF585875B4693BA3A512</key>
 		<dict>
 			<key>fileRef</key>
-			<string>B6FBAFA80CC67CDDF34EFD933E05CE6B</string>
+			<string>DBC3C63ACC2AD7D045A84A491D97DB54</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -4057,7 +4147,7 @@
 		<key>95BEB2CE56BEDD3A535212E9C84E46A9</key>
 		<dict>
 			<key>fileRef</key>
-			<string>574129B18FAC316DFA6BECC42FA00010</string>
+			<string>CFB599D180F8041BE5271438B1197E39</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -4147,6 +4237,22 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>975617B3C317AE93611184501BC3B302</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FA180819D54F65F73A5BAD2692DD6922</string>
+				<string>B265CCCC564C4AB1E14D5400EA16207C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>SHViewPager</string>
+			<key>path</key>
+			<string>../..</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>98563873177CC5FBDD3458CF844194C9</key>
 		<dict>
@@ -4265,21 +4371,6 @@
 				<string>-fno-objc-arc</string>
 			</dict>
 		</dict>
-		<key>9C6C2DE2289EB75125FB7457192E4FF1</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SHViewPager.framework</string>
-			<key>path</key>
-			<string>SHViewPager.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>9D21C236068062A9C4DDD612C5A3467B</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -4323,6 +4414,35 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>9EAD7C5340ADE637741075E185097E20</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Expecta.framework</string>
+			<key>path</key>
+			<string>Expecta.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>9F89C52EC7F96E26850903314FD361B9</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>D3E7B94C6EB14C07828622ECEC647FDE</string>
+				<string>1278C7408C218467B20EA9B45B3FAB18</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
 		<key>A193DEFA4D1CD24BE0FE7815E44EC372</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -4336,21 +4456,16 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>A2349E0DFB3F8A0A8FF0E49EC9801003</key>
+		<key>A23B358A853ED2875101C685A695F8EC</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>5B9BED08C9A13FA76D2FAB4181F421F0</string>
-				<string>F73E2F5321D45C6C431AD80C6F092805</string>
-			</array>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>SHViewPager</string>
-			<key>path</key>
-			<string>../..</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>A2540F2F30D0D24D1BECFC5FA799995B</key>
 		<dict>
@@ -4401,7 +4516,7 @@
 			<key>productName</key>
 			<string>Pods-SHViewPager_Example-SHViewPager_Tests</string>
 			<key>productReference</key>
-			<string>7533B1E2E8F10D625CCCE2EA46E5C106</string>
+			<string>CE8DF4C58986B1B2D5A8605A157A5E1F</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
@@ -4422,19 +4537,6 @@
 			<string>22C6E607E674AB20554080B3E2A4B463</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>A3310F15FE566D54ACD36064C1C45F35</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>SHViewPager.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>A40BD63BA2BF1E89CAE511B5324024F4</key>
 		<dict>
@@ -4608,25 +4710,6 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>A773012C1EEDE6444EA22560378AD74F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D07F262613E9DFED527192A9796CE543</string>
-				<string>8447A1C0B8675BCCDE4ADBD4D3324B32</string>
-				<string>428E7509D6F61961DA0F8EFF8A4267BF</string>
-				<string>4E4419F2A6F4CE160737AB4812482002</string>
-				<string>7533B1E2E8F10D625CCCE2EA46E5C106</string>
-				<string>9C6C2DE2289EB75125FB7457192E4FF1</string>
-				<string>3994DF171593904D16DCE2B0943CB40E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>A833BC98F95E74ABFF866C85B3FC9338</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -4719,6 +4802,13 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>ACF761E666DBB5DA7913A9B0AA1CECCB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D4F4B410BDF1823D9CE0782CB157961F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>AEFE305560483772516B366088F6E2B4</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -4747,19 +4837,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>AF3F4ABE4559944B817A654A6BAD99E6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SHViewPagerController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>AFFC8900E52BBEC72059334132F3A8F3</key>
 		<dict>
@@ -4792,19 +4869,6 @@
 			<string>text.xcconfig</string>
 			<key>path</key>
 			<string>Pods-SHViewPager_Example.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B078B990A468DB9E1447DC6A30783F70</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>SHViewPager.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -4882,6 +4946,26 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>B265CCCC564C4AB1E14D5400EA16207C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3FE641E54AF058F38ADB7C17C40353CC</string>
+				<string>389BCD357068B594283EC2F09DF3D4B4</string>
+				<string>28BC3E5159AE44605E89DE8FF7205AD9</string>
+				<string>7984F978BC2F848C2D457EF11E3F18AA</string>
+				<string>1A914A6458515CFD8F9889C35E2B38F9</string>
+				<string>EAD79426663ED4AE0A8B7342F5ABFC03</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>Example/Pods/Target Support Files/SHViewPager</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>B34472CAE1E8EC26152CEFB1E82BE050</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -4927,26 +5011,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>B4B2882336AFFDA91B871159DF11117F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>574129B18FAC316DFA6BECC42FA00010</string>
-				<string>DF75645B2495DAA9335802AABD0E91FF</string>
-				<string>07BA87837FF97E3191B0F74D140F76A0</string>
-				<string>1A39FC5B349970D2A720DF93B6FEBABD</string>
-				<string>B6FBAFA80CC67CDDF34EFD933E05CE6B</string>
-				<string>AF3F4ABE4559944B817A654A6BAD99E6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Classes</string>
-			<key>path</key>
-			<string>Classes</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>B4E553ECAD689166E16E72CBB083D61A</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -4985,7 +5049,7 @@
 			<key>productName</key>
 			<string>Expecta+Snapshots</string>
 			<key>productReference</key>
-			<string>8447A1C0B8675BCCDE4ADBD4D3324B32</string>
+			<string>FDC932C72F844509877E3BBCD11D1183</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
@@ -5019,32 +5083,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>B6C370EB88E9810E9E929288A514C23C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SHViewPager-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6FBAFA80CC67CDDF34EFD933E05CE6B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SHViewPagerController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>B84431CF8C64F363A334AA7089F6C134</key>
 		<dict>
 			<key>fileRef</key>
@@ -5056,6 +5094,19 @@
 				<key>COMPILER_FLAGS</key>
 				<string>-fno-objc-arc</string>
 			</dict>
+		</dict>
+		<key>B8E709BB4B71DA8434EF84B33BAF354F</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>4CE8DAF217135FA6E69E9E8A38E5F868</string>
+			<key>remoteInfo</key>
+			<string>SHViewPager-SHViewPager</string>
 		</dict>
 		<key>BA12B131F10BCE3BE6E9A02FC908FE9D</key>
 		<dict>
@@ -5182,20 +5233,20 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>BCF9D5ED3EDA2791B0D629AE6D0DFE1B</key>
+		<key>BDEB53C001855BA81C7F1F66373FDC84</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>A3310F15FE566D54ACD36064C1C45F35</string>
-			</array>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>Assets</string>
+			<string>SHViewPager.framework</string>
 			<key>path</key>
-			<string>Assets</string>
+			<string>SHViewPager.framework</string>
 			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>BEC4D7D2259B4B710DED71BD7949BACA</key>
 		<dict>
@@ -5475,6 +5526,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>C91681CD5C3D5779F32FF67216081022</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SHViewPager.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>C93D23F4DB7569CC800036F3F8FAFE2E</key>
 		<dict>
 			<key>explicitFileType</key>
@@ -5537,7 +5601,7 @@
 				<string>-fno-objc-arc</string>
 			</dict>
 		</dict>
-		<key>D07F262613E9DFED527192A9796CE543</key>
+		<key>CE8DF4C58986B1B2D5A8605A157A5E1F</key>
 		<dict>
 			<key>explicitFileType</key>
 			<string>wrapper.framework</string>
@@ -5546,11 +5610,24 @@
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>Expecta.framework</string>
+			<string>Pods_SHViewPager_Example_SHViewPager_Tests.framework</string>
 			<key>path</key>
-			<string>Expecta.framework</string>
+			<string>Pods_SHViewPager_Example_SHViewPager_Tests.framework</string>
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>CFB599D180F8041BE5271438B1197E39</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SHBaseView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>D148E142A756A0CD8BA055B657862814</key>
 		<dict>
@@ -5731,6 +5808,28 @@
 				</array>
 			</dict>
 		</dict>
+		<key>D3E7B94C6EB14C07828622ECEC647FDE</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>28BC3E5159AE44605E89DE8FF7205AD9</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>SHViewPager</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>bundle</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
 		<key>D417CB778FB662CFE79DB7FD9E6554A8</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -5772,7 +5871,7 @@
 			<key>mainGroup</key>
 			<string>7DB346D0F39D3F0E887471402A8071AB</string>
 			<key>productRefGroup</key>
-			<string>A773012C1EEDE6444EA22560378AD74F</string>
+			<string>0E43E3D8116EBFBE17FBA1DAD206560D</string>
 			<key>projectDirPath</key>
 			<string></string>
 			<key>projectReferences</key>
@@ -5787,6 +5886,7 @@
 				<string>381C5DAF00BF63D98284F08822EC4667</string>
 				<string>A2BBF79FA257D383F378E688ECC8A732</string>
 				<string>068A512C2C544D4943DB7EDEF88D177C</string>
+				<string>4CE8DAF217135FA6E69E9E8A38E5F868</string>
 				<string>00ADDBCA9E516B429C7877EB5AED2DCE</string>
 			</array>
 		</dict>
@@ -5837,6 +5937,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>D4F4B410BDF1823D9CE0782CB157961F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SHBaseView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>D689980BAC71EC149146C02D0BC8A0FE</key>
 		<dict>
 			<key>fileRef</key>
@@ -5861,13 +5974,6 @@
 			<string>E1E99BE24B4D5E362ECFB6580A5D5A8D</string>
 			<key>targetProxy</key>
 			<string>845DA643BAC094D83AA08D33F1BFD783</string>
-		</dict>
-		<key>D7A558C3677A98DA9B8192B18435A4FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B6C370EB88E9810E9E929288A514C23C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 		<key>D83677C54D2226C67886A525B0B46FBE</key>
 		<dict>
@@ -6074,6 +6180,26 @@
 				<string>-fno-objc-arc</string>
 			</dict>
 		</dict>
+		<key>DBC3C63ACC2AD7D045A84A491D97DB54</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SHViewPagerController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DC2A534D7509CCE74F330292CED6C60D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6CF084266D04F9AD0F1FFD71C6AFC3FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>DC61702A42844E4ED762A73E8893436B</key>
 		<dict>
 			<key>buildConfigurations</key>
@@ -6152,19 +6278,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>DF75645B2495DAA9335802AABD0E91FF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SHBaseView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>E0A077DFB064B79685B810CCEFB2F1EF</key>
 		<dict>
 			<key>fileRef</key>
@@ -6212,7 +6325,7 @@
 			<key>productName</key>
 			<string>FBSnapshotTestCase</string>
 			<key>productReference</key>
-			<string>428E7509D6F61961DA0F8EFF8A4267BF</string>
+			<string>FD6A983217A896FDFDC779FC6B41C46E</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
@@ -6392,6 +6505,19 @@
 				</array>
 			</dict>
 		</dict>
+		<key>EAD79426663ED4AE0A8B7342F5ABFC03</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SHViewPager-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>EC13DDF6CA2C4CAAA835ABE5DA3A731F</key>
 		<dict>
 			<key>children</key>
@@ -6415,7 +6541,7 @@
 		<key>EF117A5A578532F9374CF05184A2DA4F</key>
 		<dict>
 			<key>fileRef</key>
-			<string>07BA87837FF97E3191B0F74D140F76A0</string>
+			<string>596FC03E1AD7B4500EC2F2BC87D90E35</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -6601,7 +6727,7 @@
 		<key>F574450ED5CC6BA68F58AF0EBFEDDF07</key>
 		<dict>
 			<key>fileRef</key>
-			<string>0F15BD5A66C8E065582D92FDDB5F6F4A</string>
+			<string>EAD79426663ED4AE0A8B7342F5ABFC03</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -6642,26 +6768,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F73E2F5321D45C6C431AD80C6F092805</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5D8196D2D2199690CC7946A2F76385C0</string>
-				<string>4BD0D1DDA079EFE763AF0D5CB892789B</string>
-				<string>B078B990A468DB9E1447DC6A30783F70</string>
-				<string>B6C370EB88E9810E9E929288A514C23C</string>
-				<string>1F28F81AD9846A16E643931495825AC6</string>
-				<string>0F15BD5A66C8E065582D92FDDB5F6F4A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>Example/Pods/Target Support Files/SHViewPager</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>F75CB2A727F678C9A848A3A11EA7979B</key>
 		<dict>
 			<key>fileRef</key>
@@ -6688,6 +6794,21 @@
 			<string>UIApplication+StrictKeyWindow.h</string>
 			<key>path</key>
 			<string>FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA180819D54F65F73A5BAD2692DD6922</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>27BDA6669044981BC1C06E1DF40E9FA9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>SHViewPager</string>
+			<key>path</key>
+			<string>SHViewPager</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -6842,6 +6963,21 @@
 				</array>
 			</dict>
 		</dict>
+		<key>FD6A983217A896FDFDC779FC6B41C46E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>FBSnapshotTestCase.framework</string>
+			<key>path</key>
+			<string>FBSnapshotTestCase.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
 		<key>FDB667FDEC11589B26C54AE25F550F2C</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -6856,6 +6992,21 @@
 			<string>Expecta/Matchers/EXPMatchers+beInTheRangeOf.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDC932C72F844509877E3BBCD11D1183</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Expecta_Snapshots.framework</string>
+			<key>path</key>
+			<string>Expecta_Snapshots.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>FDE880572CC4AF9A3FB007D3FBAB3FC9</key>
 		<dict>

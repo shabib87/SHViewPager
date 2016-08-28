@@ -1,20 +1,20 @@
 //
-//  ContentViewController.m
+//  SHContentViewController.m
 //  SHViewPager
 //
 //  Created by shabib hossain on 8/28/16.
 //  Copyright © 2016 Code with Shabib. All rights reserved.
 //
 
-#import "ContentViewController.h"
+#import "SHContentViewController.h"
 
-@interface ContentViewController ()
+@interface SHContentViewController ()
 
 @property (nonatomic, weak) IBOutlet UILabel *selectionLabel;
 
 @end
 
-@implementation ContentViewController
+@implementation SHContentViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -1,5 +1,5 @@
 //
-//  ContentViewController.h
+//  SHContentViewController.h
 //  SHViewPager
 //
 //  Created by shabib hossain on 8/28/16.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ContentViewController : UIViewController
+@interface SHContentViewController : UIViewController
 
 @property (nonatomic, strong) NSString *selectionIndicatorString;
 

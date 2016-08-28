@@ -31,6 +31,6 @@
 
 @interface SHViewPagerController : UIViewController <SHViewPagerDataSource, SHViewPagerDelegate>
 
-@property (nonatomic, strong) SHViewPager *viewPager;
+@property (nonatomic, strong, nonnull) SHViewPager *viewPager;
 
 @end

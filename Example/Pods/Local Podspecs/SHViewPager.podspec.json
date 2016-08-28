@@ -1,22 +1,32 @@
 {
   "name": "SHViewPager",
   "version": "2.0.0",
-  "summary": "A short description of SHViewPager.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/SHViewPager",
+  "summary": "A simple view pager for iOS. Compatible with iOS 8.0 or later.",
+  "description": "A simple view pager for iOS. Compatible with iOS 8.0 or later, that imitates the view pager vastly used on android apps.",
+  "homepage": "https://github.com/shabib87/SHViewPager",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "shabib87": "shabib.sust@gmail.com"
+    "Ahmad Shabibul Hossain": "shabib.sust@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/SHViewPager.git",
+    "git": "https://github.com/shabib87/SHViewPager.git",
     "tag": "2.0.0"
   },
+  "social_media_url": "https://twitter.com/shabib_hossain",
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "SHViewPager/**/*"
+  "requires_arc": true,
+  "source_files": "SHViewPager/Classes/**/*",
+  "resource_bundles": {
+    "SHViewPager": "Pod/**/*.xib"
+  },
+  "public_header_files": "Pod/Classes/**/*.h",
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ]
 }

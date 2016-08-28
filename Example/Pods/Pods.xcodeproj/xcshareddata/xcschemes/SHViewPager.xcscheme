@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4E88B39FFEA396E5E9D871B6'
+               BlueprintIdentifier = 'AA7EBD3A938476C131FA11BC'
                BlueprintName = 'SHViewPager'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'SHViewPager.framework'>
