@@ -1,0 +1,22 @@
+{
+  "name": "SHViewPager",
+  "version": "2.0.0",
+  "summary": "A short description of SHViewPager.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/SHViewPager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "shabib87": "shabib.sust@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/SHViewPager.git",
+    "tag": "2.0.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SHViewPager/**/*"
+}
