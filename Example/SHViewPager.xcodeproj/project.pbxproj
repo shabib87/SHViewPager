@@ -208,6 +208,14 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		F064E5F71D7353E4006150D7 /* Using Title Header for Menu */ = {
+			isa = PBXGroup;
+			children = (
+				F0F2900C1D73405E009C04A7 /* SHExample3VC.swift */,
+			);
+			name = "Using Title Header for Menu";
+			sourceTree = "<group>";
+		};
 		F0F28FFF1D7336F1009C04A7 /* ContentViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,8 +241,8 @@
 			children = (
 				F0F28FFF1D7336F1009C04A7 /* ContentViewController */,
 				F0F290161D734492009C04A7 /* Using SHViewPagerController */,
-				F0F290191D734BAA009C04A7 /* Using Image Item For Menu */,
-				F0F2900C1D73405E009C04A7 /* SHExample3VC.swift */,
+				F0F290191D734BAA009C04A7 /* Using Image Item for Menu */,
+				F064E5F71D7353E4006150D7 /* Using Title Header for Menu */,
 			);
 			name = "Implementation Examples";
 			sourceTree = "<group>";
@@ -248,13 +256,13 @@
 			name = "Using SHViewPagerController";
 			sourceTree = "<group>";
 		};
-		F0F290191D734BAA009C04A7 /* Using Image Item For Menu */ = {
+		F0F290191D734BAA009C04A7 /* Using Image Item for Menu */ = {
 			isa = PBXGroup;
 			children = (
 				F0F290081D734027009C04A7 /* SHExample2VC.h */,
 				F0F290091D734027009C04A7 /* SHExample2VC.m */,
 			);
-			name = "Using Image Item For Menu";
+			name = "Using Image Item for Menu";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
