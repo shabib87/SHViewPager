@@ -25,21 +25,21 @@
 
 ## Preview
 
-iPhone interface:<br/>
+iPhone interface:<br/><br/>
 [![iPhone screen](Images/SHViewPager_iphoneScreens.gif)](Images/SHViewPager_iphoneScreens.gif)
-<br/>iPad interface:<br/>
+<br/><br/>iPad interface:<br/><br/>
 [![iPad screen](Images/SHViewPager_ipadScreens.gif)](Images/SHViewPager_ipadScreens.gif)
 
 ## Advantages
 
- * [x] Supports both Swift and Objective-c
+ * [x] Supports both Swift and Objective-C
  * [x] Supports all orientations
  * [x] Supports iPad
  * [x] Supports Autolayout
 
 ## Demo project
 
-Fully workable examples; both in Objective-C and Swift; are included. If you want to try it yourself, just download/checkout this repository, and run `pod install` from the Example directory first. Then open the SHViewPager.xcworkspace with Xcode.
+Fully workable examples; both in Objective-C and Swift; are included. If you want to try it yourself, just download/checkout this repository, and run `pod install` from the Example directory first. Then open the `SHViewPager.xcworkspace` with Xcode.
 
 ## Requirements
 
@@ -65,7 +65,7 @@ pod 'SHViewPager', '~> 2.0'
 1. Download the [latest code version](http://github.com/shabib87/SHViewPager/archive/master.zip) or add the repository as a git submodule to your git-tracked project.
 2. Drag and drop the **Classes** and the **Resources** directory from the archive in your project navigator. Make sure to select *Copy items* when asked if you extracted the code archive outside of your project.
 
-Use SHViewPager wherever you need it with `#import <SHViewPager.h>` in Objective-C and `import SHViewPager` in Swift.
+Use SHViewPager wherever you need it with `#import "SHViewPager.h"` in Objective-C and `import SHViewPager` in Swift.
 
 ##How to use
 
