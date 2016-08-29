@@ -71,7 +71,7 @@
 - (UIViewController *)viewPager:(SHViewPager *)viewPager controllerForPageAtIndex:(NSInteger)index {
     SHContentViewController *contentVC = [[SHContentViewController alloc] initWithNibName:@"SHContentViewController" bundle:nil];
     contentVC.menuIndex = index + 1;
-    contentVC.selectionIndicatorString = [NSString stringWithFormat:@"Currently Selected :%ld index", index];
+    contentVC.selectionIndicatorString = [NSString stringWithFormat:@"Currently Selected :%ld index", index + 1];
     return contentVC;
 }
 

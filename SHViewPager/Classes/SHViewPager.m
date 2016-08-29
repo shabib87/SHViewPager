@@ -234,7 +234,7 @@
 }
 
 -(void)setUpContentViewForTargetIndex:(NSInteger)index {
-    NSString *vcKey = [NSString stringWithFormat:@"contentView-%ld",index];
+    NSString *vcKey = [NSString stringWithFormat:@"contentView-%ld",(long)index];
     if ([_contentViewControllersViews objectForKey:vcKey]) return;
     else {
         UIViewController *contentVC = [self.dataSource viewPager:self controllerForPageAtIndex:index];

@@ -37,6 +37,8 @@ static NSString * const currentTranslucentStatusTabBarKey = @"currentTranslucent
 
 @implementation SHViewPagerController
 
+@dynamic view;
+
 - (void)loadView {
     [super loadView];
 
