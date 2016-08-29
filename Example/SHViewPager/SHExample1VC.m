@@ -26,7 +26,7 @@
 //
 
 #import "SHExample1VC.h"
-#import "SHContentViewController.h"
+#import "SHViewPager_Example-Swift.h"
 
 @interface SHExample1VC () {
     NSArray *menuItems;
