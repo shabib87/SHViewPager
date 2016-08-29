@@ -79,7 +79,7 @@ The `SHViewPager` needs it's `datasource` and `delegate` protocols to be impleme
 
 **Method 2**
 
-1. Drag and drop a `UIViewController` to the Storyboard.
+1. Drag and drop an `UIViewController` to the Storyboard.
 2. Change the class to `SHViewPagerController`
 
 Four `datasource` methods are required and others are optional.
