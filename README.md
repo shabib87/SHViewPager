@@ -57,7 +57,10 @@ SHViewPager is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'SHViewPager', '~> 2.0'
+use_frameworks!
+target '<YourTarget>' do
+	pod 'SHViewPager', '~> 2.0'
+end
 ```
 
 ###Source files
@@ -65,7 +68,7 @@ pod 'SHViewPager', '~> 2.0'
 1. Download the [latest code version](http://github.com/shabib87/SHViewPager/archive/master.zip) or add the repository as a git submodule to your git-tracked project.
 2. Drag and drop the **Classes** and the **Resources** directory from the archive in your project navigator. Make sure to select *Copy items* when asked if you extracted the code archive outside of your project.
 
-Use SHViewPager wherever you need it with `#import "SHViewPager.h"` in Objective-C and `import SHViewPager` in Swift.
+Use SHViewPager wherever you need it with `#import <SHViewPager/SHViewPager.h>` in Objective-C and `import SHViewPager` in Swift.
 
 ##How to use
 
@@ -101,14 +104,14 @@ and,
 
 
 ```objc
-- (NSString * _Nonnull)viewPager:(SHViewPager * _Nonnull)viewPager titleForPageMenuAtIndex:(NSInteger)index;
+- (NSString *)viewPager:(SHViewPager *)viewPager titleForPageMenuAtIndex:(NSInteger)index;
 ````
 
 or,
 
 
 ```objc
-- (UIImage * _Nonnull)viewPager:(SHViewPager * _Nonnull)viewPager imageForPageMenuAtIndex:(NSInteger)index;
+- (UIImage *)viewPager:(SHViewPager *)viewPager imageForPageMenuAtIndex:(NSInteger)index;
 ````
 
 **Swift: The required datasource methods are**
