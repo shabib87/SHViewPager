@@ -1,4 +1,4 @@
-![KVNProgress](Images/codewithshabib.png)
+![SHViewPager](Images/codewithshabib.png)
 
 # SHViewPager
 
@@ -6,13 +6,29 @@
 [![License](https://img.shields.io/cocoapods/l/SHViewPager.svg?style=flat)](http://cocoapods.org/pods/SHViewPager)
 [![Platform](https://img.shields.io/cocoapods/p/SHViewPager.svg?style=flat)](http://cocoapods.org/pods/SHViewPager)
 
-- A simple view pager for iOS, which acts similar to android's viewPager. Compatible with iOS 8.0 or later.
+- A simple view pager for iOS, which acts similar to android's viewPager. Compatible with iOS 8.0 or later. Supports all iOS devices in all interface orientation.
+
+## Preview
+
+[![iPhone screen](Images/SHViewPager_iphoneScreens.gif)](Images/SHViewPager_iphoneScreens.gif)
+[![iPad screen](Images/SHViewPager_ipadScreens.gif)](Images/SHViewPager_ipadScreens.gif)
+
+## Advantages
+
+ * [x] Supports both Swift and Objective-c
+ * [x] Supports all orientations
+ * [x] Supports iPad
+ * [x] Supports Autolayout
+ * [x] Can be subclassed
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+Fully workabel examples are included. If you want to try it yourself, just download/checkout this repository, and run `pod install` from the Example directory first. Then open the SHViewPager.xcworkspace with Xcode.
 
 ## Requirements
+* Xcode 6+
+* iOS 8+
+* ARC
 
 ## Installation
 
