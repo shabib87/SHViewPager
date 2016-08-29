@@ -30,7 +30,18 @@
 
 @interface SHBaseView : UIView
 
+/**
+ Constructor method to create a view from xib file
+ 
+ - parameter nibname: name of the xib file
+ */
 - (void)commonInitWithNibName:(NSString *)nibName;
+
+/**
+ Constructor method to create a base view from a view object
+ 
+ - parameter contentView: the view object
+ */
 - (void)commonInitWithView:(UIView *)contentView;
 
 @end

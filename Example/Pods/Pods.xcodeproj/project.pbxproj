@@ -125,7 +125,6 @@
 		AF1F46668D4591602887998C6E9C10AD /* EXPMatchers+beCloseTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 3222ED2F488AECE08ED9FECD6010C6C6 /* EXPMatchers+beCloseTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AFFC8900E52BBEC72059334132F3A8F3 /* ExpectaSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2A2E702F1AFBEC72E5BE8B2559C3FF /* ExpectaSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B1A21DB7494006EA8646A9897878AD64 /* SPTTestSuite.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AA48A90E62D786E45550FDE96EC3559 /* SPTTestSuite.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B41EBD7A072C5856FCF06F39A2D1AD20 /* SHBaseView_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89480CF3C9F42AADF9B4A37E382E3780 /* SHBaseView_.swift */; };
 		B6CF2F08A9BA6BAC535FEB83F839FDEE /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 284602EEB6B73B2FF29E8E1884D1DDCF /* UIImage+Diff.m */; };
 		B7185ADC751C1C1B68DCE07933CF0CB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F95232A9B4CF5F8E5C77C31F6EBF9CB /* Foundation.framework */; };
 		B84431CF8C64F363A334AA7089F6C134 /* NSValue+Expecta.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3CE450FD04D9C287FDCB9B5471A9C /* NSValue+Expecta.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -371,7 +370,6 @@
 		8811FCCC67A3AA7933A8D7F3D2AC917A /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
 		88B8E1490B015D7DBDA17784F56B3464 /* SpectaDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SpectaDSL.m; path = Specta/Specta/SpectaDSL.m; sourceTree = "<group>"; };
 		893782BC9B445893B2A17470A41B10FB /* EXPMatchers+raiseWithReason.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raiseWithReason.h"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.h"; sourceTree = "<group>"; };
-		89480CF3C9F42AADF9B4A37E382E3780 /* SHBaseView_.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SHBaseView_.swift; sourceTree = "<group>"; };
 		8CCEB764F35EAB4A25D4F71AD5F0650E /* SPTSharedExampleGroups.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTSharedExampleGroups.m; path = Specta/Specta/SPTSharedExampleGroups.m; sourceTree = "<group>"; };
 		8E2421AE9BAD6AC30BD46577711FAC89 /* Expecta+Snapshots-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Expecta+Snapshots-prefix.pch"; sourceTree = "<group>"; };
 		8EC17AE43C90E3978EC98EFE21BC4A30 /* SHViewPager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SHViewPager.xcconfig; sourceTree = "<group>"; };
@@ -461,6 +459,7 @@
 		ECB29A93B46B6CB71F5ED73BEE53610F /* SPTExampleGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExampleGroup.h; path = Specta/Specta/SPTExampleGroup.h; sourceTree = "<group>"; };
 		EDAD18EE5ABA39D0FE04F6D74180A9C8 /* PodAsset.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PodAsset.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF4DACB9745B6D60E359B73D1E0E3958 /* PodAsset.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PodAsset.xcconfig; sourceTree = "<group>"; };
+		F07C8A2A1D743BFB009455FF /* SHViewPager-SHViewPager-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SHViewPager-SHViewPager-Bridging-Header.h"; sourceTree = "<group>"; };
 		F0A1AC73735C264662F51781BD0429FE /* PodAsset.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PodAsset.m; path = Pod/Classes/PodAsset.m; sourceTree = "<group>"; };
 		F1D35F827359B41D934896C361B3A787 /* EXPMatchers+equal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+equal.m"; path = "Expecta/Matchers/EXPMatchers+equal.m"; sourceTree = "<group>"; };
 		F2FC0320C415E172434310F859DFF8A4 /* Specta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Specta.xcconfig; sourceTree = "<group>"; };
@@ -819,12 +818,12 @@
 			children = (
 				80B4A63F0C16227E9B5A3E10665A9B63 /* SHBaseView.h */,
 				D7397EC40BAD817B0DCC25AD3FB03934 /* SHBaseView.m */,
-				89480CF3C9F42AADF9B4A37E382E3780 /* SHBaseView_.swift */,
 				41D29EB902FCE1E40D32AD03D6BD4438 /* SHViewPager.h */,
 				B8B59F20B74EF7F553223D040C5C2B16 /* SHViewPager.m */,
-				DFA93B820721A985F4626E7C7532A5D6 /* SHViewPager-SHViewPager-Bridging-Header.h */,
 				D6F595405A8FFC001055C7BD45834A58 /* SHViewPagerController.h */,
 				59F1FACEC571D88984DD2DFAAEFD5406 /* SHViewPagerController.m */,
+				DFA93B820721A985F4626E7C7532A5D6 /* SHViewPager-SHViewPager-Bridging-Header.h */,
+				F07C8A2A1D743BFB009455FF /* SHViewPager-SHViewPager-Bridging-Header.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1418,7 +1417,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AE704F75EE8E21B6E5E1888C19639EB /* SHBaseView.m in Sources */,
-				B41EBD7A072C5856FCF06F39A2D1AD20 /* SHBaseView_.swift in Sources */,
 				1D36B62BA974803B40ECA6F5F2E7DBFC /* SHViewPager-dummy.m in Sources */,
 				C64D2B249AB22E9831DAFD857304852C /* SHViewPager.m in Sources */,
 				6D469F25BD745A9764FF74915F9A8423 /* SHViewPagerController.m in Sources */,
@@ -1771,14 +1769,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8EC17AE43C90E3978EC98EFE21BC4A30 /* SHViewPager.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SHViewPager";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/SHViewPager/ResourceBundle-SHViewPager-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = SHViewPager;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "../../SHViewPager/Classes/SHViewPager-SHViewPager-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -1904,14 +1906,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8EC17AE43C90E3978EC98EFE21BC4A30 /* SHViewPager.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SHViewPager";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/SHViewPager/ResourceBundle-SHViewPager-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = SHViewPager;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "../../SHViewPager/Classes/SHViewPager-SHViewPager-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
