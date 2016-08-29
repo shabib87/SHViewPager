@@ -1,0 +1,6 @@
+framework module PodAsset {
+  umbrella header "PodAsset-umbrella.h"
+
+  export *
+  module * { export * }
+}

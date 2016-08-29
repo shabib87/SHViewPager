@@ -17,12 +17,14 @@
     
     NSMutableDictionary *_contentViewControllersViews;
 }
-@property (nonatomic, strong) UIViewController *containerViewController;
+@property (nonatomic, weak) UIViewController *containerViewController;
 
 @property (nonatomic, weak) IBOutlet UIScrollView *topTabScroll;
 @property (nonatomic, weak) IBOutlet UIScrollView *contentScroll;
 @property (nonatomic, weak) IBOutlet UILabel *headerTitleLabel;
 @property (nonatomic, weak) IBOutlet UIImageView *indexIndicatorImageView;
+
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint *contentScrollTopConstraint;
 
 @end
 
@@ -224,8 +226,9 @@
 -(void)setUpHeaderTitleTextAtIndex:(NSInteger)index {
     if ([self.dataSource respondsToSelector:@selector(viewPager:headerTitleForPageMenuAtIndex:)]) {
         NSString *headerTitle = [self.dataSource viewPager:self headerTitleForPageMenuAtIndex:index];
-        
         _headerTitleLabel.text = headerTitle;
+    } else {
+        _headerTitleLabel.hidden = YES;
     }
 }
 

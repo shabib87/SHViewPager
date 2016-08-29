@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SHViewPager">
             <connections>
                 <outlet property="contentScroll" destination="Qrm-T2-GrY" id="uA4-ri-uwy"/>
+                <outlet property="contentScrollTopConstraint" destination="vLO-8u-kBI" id="9HZ-f6-GOw"/>
                 <outlet property="headerTitleLabel" destination="ie3-f6-q1q" id="h9f-sk-UTm"/>
                 <outlet property="indexIndicatorImageView" destination="WNN-kI-Mr9" id="ApJ-Hy-IiC"/>
                 <outlet property="topTabScroll" destination="vBJ-zh-vPT" id="qrh-wS-9zP"/>

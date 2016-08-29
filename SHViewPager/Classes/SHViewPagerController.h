@@ -29,8 +29,15 @@
 #import <UIKit/UIKit.h>
 #import "SHViewPager.h"
 
+/**
+ *
+ * Subclass this to use directly from the storyboard.
+ * Known issue #18: Hides under translucent nav and tab bar
+ */
 @interface SHViewPagerController : UIViewController <SHViewPagerDataSource, SHViewPagerDelegate>
 
-@property (nonatomic, strong, nonnull) IBOutlet SHViewPager *viewPager;
+@property (nonatomic, strong, nonnull) SHViewPager *view;
 
 @end
+
+

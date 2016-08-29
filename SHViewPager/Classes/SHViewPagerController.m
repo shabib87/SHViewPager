@@ -28,6 +28,9 @@
 
 #import "SHViewPagerController.h"
 
+static NSString * const currentTranslucentStatusNavBarKey = @"currentTranslucentStatusNavBarKey";
+static NSString * const currentTranslucentStatusTabBarKey = @"currentTranslucentStatusTabBarKey";
+
 @interface SHViewPagerController ()
 
 @end
@@ -36,21 +39,43 @@
 
 - (void)loadView {
     [super loadView];
+
+    self.view = [SHViewPager new];
+    self.view.dataSource = self;
+    self.view.delegate = self;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    /**
+     *
+     *  Hack property to use on Navigation bar.
+     *  Please refer to issue: #18
+     */
+    BOOL navBarTranslucent = self.navigationController.navigationBar.translucent;
+    [SHViewPagerController setCurrentTranslucentStatusNavBar:navBarTranslucent];
+    if (navBarTranslucent) {
+        self.navigationController.navigationBar.translucent = NO;
+    }
     
-//    self.viewPager = [SHViewPager new];
-//    _viewPager.dataSource = self;
-//    _viewPager.delegate = self;
-//    
-//    [self.view addSubview:_viewPager];
-//    
-//    NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(_viewPager);
-//    
-//    // constraint with top: represents y
-//    NSArray *constraints_V = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[_viewPager]-0-|" options:0 metrics:nil views:viewsDictionary];
-//    // constraint with side: represents x
-//    NSArray *constraints_H = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[_viewPager]-0-|" options:0 metrics:nil views:viewsDictionary];
-//    [self.view addConstraints:constraints_V];
-//    [self.view addConstraints:constraints_H];
+    /**
+     *
+     *  Hack property to use on tab bar.
+     *  Please refer to issue: #18
+     */
+    BOOL tabBarTranslucent = self.tabBarController.tabBar.translucent;
+    [SHViewPagerController setCurrentTranslucentStatusTabBar:tabBarTranslucent];
+    if (tabBarTranslucent) {
+        self.tabBarController.tabBar.translucent = NO;
+    }
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    /**
+     *  Setting back the status to the original ones
+     */
+    self.navigationController.navigationBar.translucent = [SHViewPagerController currentTranslucentStatusNavBar];
+    self.tabBarController.tabBar.translucent = [SHViewPagerController currentTranslucentStatusTabBar];
 }
 
 #pragma mark - SHViewPagerDataSource stack
@@ -65,6 +90,44 @@
 
 - (UIViewController *)viewPager:(SHViewPager *)viewPager controllerForPageAtIndex:(NSInteger)index {
     @throw ([NSException exceptionWithName:@"DataSourceIncompleteImplementationException" reason:@"You should implement #viewPager:controllerForPageAtIndex:" userInfo:nil]);
+}
+
+/**
+ *
+ *  Hack property to use on Navigation bar.
+ *  Please refer to issue: #18
+ */
++ (void)setCurrentTranslucentStatusNavBar:(BOOL)translucent {
+    [[NSUserDefaults standardUserDefaults] setBool:translucent forKey:currentTranslucentStatusNavBarKey];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+/**
+ *
+ *  Hack property to use on Navigation bar.
+ *  Please refer to issue: #18
+ */
++ (BOOL)currentTranslucentStatusNavBar {
+    return [[NSUserDefaults standardUserDefaults] boolForKey:currentTranslucentStatusNavBarKey];
+}
+
+/**
+ *
+ *  Hack property to use on tab bar.
+ *  Please refer to issue: #18
+ */
++ (void)setCurrentTranslucentStatusTabBar:(BOOL)translucent {
+    [[NSUserDefaults standardUserDefaults] setBool:translucent forKey:currentTranslucentStatusTabBarKey];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+/**
+ *
+ *  Hack property to use on tab bar.
+ *  Please refer to issue: #18
+ */
++ (BOOL)currentTranslucentStatusTabBar {
+    return [[NSUserDefaults standardUserDefaults] boolForKey:currentTranslucentStatusTabBarKey];
 }
 
 @end

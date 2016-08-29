@@ -21,7 +21,7 @@
     [super viewDidLoad];
     
     menuItems = [[NSArray alloc] initWithObjects:@"menu 1", @"menu 2", @"menu 3", @"menu 4", @"menu 5", @"menu 6", @"menu 7", @"menu 8", @"menu 9", nil];
-    [self.viewPager reloadData];
+    [self.view reloadData];
 }
 
 -(void)viewWillLayoutSubviews {
@@ -36,35 +36,32 @@
     // and check what happens.
     
     if (menuItems.count) {
-        [self.viewPager pagerWillLayoutSubviews];
+        [self.view pagerWillLayoutSubviews];
     }
 }
 
 #pragma mark - SHViewPagerDataSource stack
 
-- (NSInteger)numberOfPagesInViewPager:(SHViewPager *)viewPager
-{
+- (NSInteger)numberOfPagesInViewPager:(SHViewPager *)viewPager {
     return menuItems.count;
 }
 
-- (UIViewController *)containerControllerForViewPager:(SHViewPager *)viewPager
-{
+- (UIViewController *)containerControllerForViewPager:(SHViewPager *)viewPager {
     return self;
 }
 
-- (UIViewController *)viewPager:(SHViewPager *)viewPager controllerForPageAtIndex:(NSInteger)index
-{
+- (UIViewController *)viewPager:(SHViewPager *)viewPager controllerForPageAtIndex:(NSInteger)index {
     SHContentViewController *contentVC = [[SHContentViewController alloc] initWithNibName:@"SHContentViewController" bundle:nil];
     contentVC.selectionIndicatorString = [NSString stringWithFormat:@"Currently Selected :%ld index", index];
     return contentVC;
 }
 
 - (UIImage *)indexIndicatorImageForViewPager:(SHViewPager *)viewPager {
-    return [UIImage imageNamed:@"horizontal_line.png"];
+    return [UIImage imageNamed:@"IndexIndicatorIcon"];
 }
 
 - (UIImage *)indexIndicatorImageDuringScrollAnimationForViewPager:(SHViewPager *)viewPager {
-    return [UIImage imageNamed:@"horizontal_line_moving.png"];
+    return [UIImage imageNamed:@"IndexIndicatorMovingIcon"];
 }
 
 - (NSString *)viewPager:(SHViewPager *)viewPager titleForPageMenuAtIndex:(NSInteger)index {
