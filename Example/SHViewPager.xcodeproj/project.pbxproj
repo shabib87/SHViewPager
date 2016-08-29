@@ -22,8 +22,8 @@
 		7C88B5B003B4E60DEB55A7B4 /* Pods_SHViewPager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C41E1E98FACD0736033FD9 /* Pods_SHViewPager_Example.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		8CDF4A6353DE276F9689167F /* Pods_SHViewPager_Example_SHViewPager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A92CBFC3B2464FD3A34053B /* Pods_SHViewPager_Example_SHViewPager_Tests.framework */; };
-		F0F290031D733724009C04A7 /* SHContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F290011D733724009C04A7 /* SHContentViewController.m */; };
-		F0F290041D733724009C04A7 /* SHContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0F290021D733724009C04A7 /* SHContentViewController.xib */; };
+		F07C8A2F1D74468D009455FF /* SHContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07C8A2D1D74468D009455FF /* SHContentViewController.swift */; };
+		F07C8A301D74468D009455FF /* SHContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F07C8A2E1D74468D009455FF /* SHContentViewController.xib */; };
 		F0F290071D73400F009C04A7 /* SHExample1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F290061D73400F009C04A7 /* SHExample1VC.m */; };
 		F0F2900A1D734027009C04A7 /* SHExample2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F290091D734027009C04A7 /* SHExample2VC.m */; };
 		F0F2900D1D73405E009C04A7 /* SHExample3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2900C1D73405E009C04A7 /* SHExample3VC.swift */; };
@@ -69,9 +69,8 @@
 		C3EC80A75F2E2BE5807CD8B5 /* Pods-SHViewPager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHViewPager_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SHViewPager_Example/Pods-SHViewPager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C9C41E1E98FACD0736033FD9 /* Pods_SHViewPager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHViewPager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE21D69F60D76C0A7F094924 /* SHViewPager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SHViewPager.podspec; path = ../SHViewPager.podspec; sourceTree = "<group>"; };
-		F0F290001D733724009C04A7 /* SHContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHContentViewController.h; sourceTree = "<group>"; };
-		F0F290011D733724009C04A7 /* SHContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHContentViewController.m; sourceTree = "<group>"; };
-		F0F290021D733724009C04A7 /* SHContentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHContentViewController.xib; sourceTree = "<group>"; };
+		F07C8A2D1D74468D009455FF /* SHContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHContentViewController.swift; sourceTree = "<group>"; };
+		F07C8A2E1D74468D009455FF /* SHContentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHContentViewController.xib; sourceTree = "<group>"; };
 		F0F290051D73400F009C04A7 /* SHExample1VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHExample1VC.h; sourceTree = "<group>"; };
 		F0F290061D73400F009C04A7 /* SHExample1VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHExample1VC.m; sourceTree = "<group>"; };
 		F0F290081D734027009C04A7 /* SHExample2VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHExample2VC.h; sourceTree = "<group>"; };
@@ -219,9 +218,8 @@
 		F0F28FFF1D7336F1009C04A7 /* ContentViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F0F290001D733724009C04A7 /* SHContentViewController.h */,
-				F0F290011D733724009C04A7 /* SHContentViewController.m */,
-				F0F290021D733724009C04A7 /* SHContentViewController.xib */,
+				F07C8A2D1D74468D009455FF /* SHContentViewController.swift */,
+				F07C8A2E1D74468D009455FF /* SHContentViewController.xib */,
 				F0F2900E1D734097009C04A7 /* Push Test */,
 			);
 			name = ContentViewController;
@@ -350,7 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0F290141D73419F009C04A7 /* SHExamplePushVC.xib in Resources */,
-				F0F290041D733724009C04A7 /* SHContentViewController.xib in Resources */,
+				F07C8A301D74468D009455FF /* SHContentViewController.xib in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -465,8 +463,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F07C8A2F1D74468D009455FF /* SHContentViewController.swift in Sources */,
 				F0F2900D1D73405E009C04A7 /* SHExample3VC.swift in Sources */,
-				F0F290031D733724009C04A7 /* SHContentViewController.m in Sources */,
 				F0F290131D73419F009C04A7 /* SHExamplePushVC.swift in Sources */,
 				6003F59E195388D20070C39A /* SHAppDelegate.m in Sources */,
 				F0F2900A1D734027009C04A7 /* SHExample2VC.m in Sources */,

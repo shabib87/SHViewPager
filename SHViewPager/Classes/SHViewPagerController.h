@@ -1,10 +1,10 @@
 //
 //  SHViewPagerController.h
 //  SHViewPager
-//  version 1.0, compatible with iOS 6.0 and greater
+
 //
 //  Created by shabib hossain on 5/15/14.
-//  Copyright (c) 2014 shabib hossain. All rights reserved.
+//  Copyright © 2014-2016 Code with Shabib. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining
 //  a copy of this software and associated documentation files (the "Software"),
@@ -36,6 +36,10 @@
  */
 @interface SHViewPagerController : UIViewController <SHViewPagerDataSource, SHViewPagerDelegate>
 
+/**
+ *  SHViewPagerController's view as SHViewPager.
+ *  call [self.view reloadData] / self.view.reloadData() in the viewDidLoadMethod to start pager.
+ */
 @property (nonatomic, strong, nonnull) SHViewPager *view;
 
 @end

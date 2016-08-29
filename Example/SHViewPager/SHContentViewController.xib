@@ -5,30 +5,35 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SHContentViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SHContentViewController" customModule="SHViewPager_Example" customModuleProvider="target">
             <connections>
-                <outlet property="selectionLabel" destination="SSl-Vu-khb" id="z8z-km-PM3"/>
+                <outlet property="indicatorLabel" destination="TbO-5j-GWG" id="BOm-4M-BDF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSl-Vu-khb">
-                    <rect key="frame" x="139" y="273" width="42" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TbO-5j-GWG">
+                    <rect key="frame" x="279" y="289" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3lf-AF-Sv7">
+                    <rect key="frame" x="266" y="318" width="68" height="30"/>
+                    <state key="normal" title="Push Test"/>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="SSl-Vu-khb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Xgo-NP-X8U"/>
-                <constraint firstItem="SSl-Vu-khb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="khl-lT-94v"/>
+                <constraint firstItem="3lf-AF-Sv7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BFk-GI-Jcu"/>
+                <constraint firstItem="3lf-AF-Sv7" firstAttribute="top" secondItem="TbO-5j-GWG" secondAttribute="bottom" constant="8" id="Hph-aL-twN"/>
+                <constraint firstItem="TbO-5j-GWG" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="biv-jF-cX7"/>
+                <constraint firstItem="TbO-5j-GWG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xyt-B2-3VL"/>
             </constraints>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
 </document>
