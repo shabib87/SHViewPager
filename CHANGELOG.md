@@ -1,8 +1,7 @@
 # Change Log
 
-## [Unreleased](https://github.com/shabib87/SHViewPager/tree/HEAD)
-
-[Full Changelog](https://github.com/shabib87/SHViewPager/compare/v1.0...HEAD)
+## [2.0.0](https://github.com/shabib87/SHViewPager/tree/2.0.0) (2016-08-29)
+[Full Changelog](https://github.com/shabib87/SHViewPager/compare/v1.0...2.0.0)
 
 **Implemented enhancements:**
 
