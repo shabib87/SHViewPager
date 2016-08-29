@@ -156,7 +156,7 @@
 
 -(void)setUpTopTab{
     NSInteger dataItems = [self.dataSource numberOfPagesInViewPager:self];
-    for (NSInteger i = 0; i < dataItems; i++){
+    for (NSInteger i = 0; i < dataItems; i++) {
         UIButton *menuButton = [UIButton buttonWithType:UIButtonTypeCustom];
         menuButton.backgroundColor = [UIColor clearColor];
         menuButton.tag = i;
@@ -192,6 +192,11 @@
 }
 
 -(void)setUpFirstContentView {
+    NSInteger dataItems = [self.dataSource numberOfPagesInViewPager:self];
+    for (NSInteger i = 0; i < dataItems; i++) {
+        UIView *placeHolderView = [[UIView alloc] init];
+        [_contentViews addObject:placeHolderView];
+    }
     [self setUpContentViewForTargetIndex:0];
     [self setUpHeaderTitleTextAtIndex:0];
     if ([self.dataSource respondsToSelector:@selector(viewPager:selectedImageForPageMenuAtIndex:)] && [self.dataSource respondsToSelector:@selector(viewPager:imageForPageMenuAtIndex:)]) {
@@ -217,7 +222,7 @@
         [_contentScroll addSubview:contentVC.view];
         [contentVC didMoveToParentViewController:self.containerViewController];
         [self.containerViewController addChildViewController:contentVC];
-        [_contentViews addObject:contentVC.view];
+        [_contentViews replaceObjectAtIndex:index withObject:contentVC.view];
         [_contentViewControllersViews setObject:contentVC.view forKey:vcKey];
     }
     [self updateContentFrames];
