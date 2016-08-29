@@ -27,7 +27,6 @@
 
 #import "SHExample2VC.h"
 #import "SHViewPager.h"
-#import "SHViewPager_Example-Swift.h"
 
 @interface SHExample2VC () <SHViewPagerDataSource, SHViewPagerDelegate> {
     NSArray *menuItems;
@@ -73,6 +72,7 @@
 
 - (UIViewController *)viewPager:(SHViewPager *)viewPager controllerForPageAtIndex:(NSInteger)index {
     SHContentViewController *contentVC = [[SHContentViewController alloc] initWithNibName:@"SHContentViewController" bundle:nil];
+    contentVC.menuIndex = index + 1;
     contentVC.selectionIndicatorString = [NSString stringWithFormat:@"Currently Selected :index %ld", index + 1];
     return contentVC;
 }

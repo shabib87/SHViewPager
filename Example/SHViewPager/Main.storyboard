@@ -101,7 +101,7 @@
             </objects>
             <point key="canvasLocation" x="965" y="801"/>
         </scene>
-        <!--Example: Title Header for Menu-->
+        <!--Data Source-->
         <scene sceneID="AkT-yX-Rw0">
             <objects>
                 <viewController id="Hg2-1x-OP4" customClass="SHExample3VC" customModule="SHViewPager_Example" customModuleProvider="target" sceneMemberID="viewController">
@@ -112,9 +112,28 @@
                     <view key="view" contentMode="scaleToFill" id="qd5-mN-oiX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0PB-2z-k2n" customClass="SHViewPager">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Hg2-1x-OP4" id="Itl-ES-jb8"/>
+                                    <outlet property="delegate" destination="Hg2-1x-OP4" id="Uim-3q-LFD"/>
+                                </connections>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MrK-rV-D6U" firstAttribute="top" secondItem="0PB-2z-k2n" secondAttribute="bottom" id="GGw-q4-TCH"/>
+                            <constraint firstAttribute="trailing" secondItem="0PB-2z-k2n" secondAttribute="trailing" id="PoY-MA-7nT"/>
+                            <constraint firstItem="0PB-2z-k2n" firstAttribute="leading" secondItem="qd5-mN-oiX" secondAttribute="leading" id="Rg9-o3-O3D"/>
+                            <constraint firstItem="0PB-2z-k2n" firstAttribute="top" secondItem="PXX-Tg-PAr" secondAttribute="bottom" id="hJq-kq-0eA"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Example: Title Header for Menu" id="s1N-pr-Adn"/>
+                    <connections>
+                        <outlet property="pager" destination="0PB-2z-k2n" id="256-aS-KIJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DYg-Nr-XiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

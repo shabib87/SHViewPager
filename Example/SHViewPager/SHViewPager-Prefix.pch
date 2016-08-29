@@ -13,4 +13,5 @@
 #ifdef __OBJC__
     @import UIKit;
     @import Foundation;
+    #import "SHViewPager_Example-Swift.h"
 #endif

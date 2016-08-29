@@ -15,7 +15,7 @@ A simple view pager for iOS. Compatible with iOS 8.0 or later, that imitates the
                        DESC
 
   s.homepage         = 'https://github.com/shabib87/SHViewPager'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.screenshots     = 'http://imgur.com/fZltUEB', 'http://imgur.com/eushIFq'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Ahmad Shabibul Hossain' => 'shabib.sust@gmail.com' }
   s.source           = { :git => 'https://github.com/shabib87/SHViewPager.git', :tag => s.version.to_s }
