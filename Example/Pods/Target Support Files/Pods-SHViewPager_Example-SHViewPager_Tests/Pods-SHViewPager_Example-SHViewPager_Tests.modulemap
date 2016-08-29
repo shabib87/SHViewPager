@@ -1,0 +1,6 @@
+framework module Pods_SHViewPager_Example_SHViewPager_Tests {
+  umbrella header "Pods-SHViewPager_Example-SHViewPager_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

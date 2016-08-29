@@ -1,21 +1,34 @@
-SHViewPager
-==================
+# SHViewPager
 
-- A simple view pager for iOS, which acts similar to android's viewPager. Compatible with iOS 6.0 or later.
+[![Version](https://img.shields.io/cocoapods/v/SHViewPager.svg?style=flat)](http://cocoapods.org/pods/SHViewPager)
+[![License](https://img.shields.io/cocoapods/l/SHViewPager.svg?style=flat)](http://cocoapods.org/pods/SHViewPager)
+[![Platform](https://img.shields.io/cocoapods/p/SHViewPager.svg?style=flat)](http://cocoapods.org/pods/SHViewPager)
 
-##SHViewPager
+- A simple view pager for iOS, which acts similar to android's viewPager. Compatible with iOS 8.0 or later.
 
-`version 1.0`, compatible with iOS 6.0 or, later
+## Example
 
-**Created by** shabib hossain on 5/15/14.
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-**Copyright (c)** 2014 shabib hossain. All rights reserved.
-- This software is licenced under MIT licence. Please check `LICENCE.md` for more details.
+## Requirements
 
-##How to use:
+## Installation
+
+**Recommended way**
+SHViewPager is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod "SHViewPager"
+```
+
+**Manual way**
 
 Take the `SHViewPager.h`, `SHViewPager.m` and `SHViewPagerController.h`, `SHViewPagerController.m` and add them to your project.
 You can either, make your desired `UIViewController` class a `subclass` of `SHViewPagerController` or, create the `SHViewPager` in your code and subview it or, you can outlet it in your xib file.
+
+##How to use:
+
 The `SHViewPager` needs it's `datasource` and `delegate` protocol to be implemented.
 Three `datasource` methods are required and others are optional.
 
@@ -39,16 +52,17 @@ To display the contents, you need to call the instance method `reloadData` in yo
 -Example:
 
 ```objc
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     // your code
     [viewPager reloadData];
 }
 ```
 
-Happy coding :)
+## Author
 
-Shabib
+**Created by** Ahmad Shabibul Hossain on 5/15/14.
 
-May 16, 2014
+## License
+
+SHViewPager is available under the MIT license. See the LICENSE file for more info.

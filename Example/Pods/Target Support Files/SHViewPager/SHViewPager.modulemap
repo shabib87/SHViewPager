@@ -1,0 +1,6 @@
+framework module SHViewPager {
+  umbrella header "SHViewPager-umbrella.h"
+
+  export *
+  module * { export * }
+}
