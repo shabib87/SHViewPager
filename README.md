@@ -175,7 +175,7 @@ Please refer to the [open issue list](https://github.com/shabib87/SHViewPager/is
 
 ## Author
 
-**Created by** Ahmad Shabibul Hossain on 5/15/14. [@shabib_hossain](https://twitter.com/shabib_hossain).
+**Created by** Ahmad Shabibul Hossain, [@shabib_hossain](https://twitter.com/shabib_hossain) on 5/15/14.
 
 ## Contact
 
