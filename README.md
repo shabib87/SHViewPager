@@ -21,6 +21,7 @@
  * [Known Issues](#known-issues)
  * [Using in iOS 7](#using-in-ios-7)
  * [Author](#author)
+ * [Contact](#contact)
  * [License](#license)
 
 ## Preview
@@ -174,8 +175,12 @@ Please refer to the [open issue list](https://github.com/shabib87/SHViewPager/is
 
 ## Author
 
-**Created by** Ahmad Shabibul Hossain on 5/15/14. 
-You can find me on Twitter [@shabib_hossain](https://twitter.com/shabib_hossain).
+**Created by** Ahmad Shabibul Hossain on 5/15/14. [@shabib_hossain](https://twitter.com/shabib_hossain).
+
+## Contact
+
+I would love to get some feedback, ideas for improvements that should be included in this project.
+I would also greatly appreciate if you follow me on [@shabib_hossain](https://twitter.com/shabib_hossain).
 
 ## License
 
