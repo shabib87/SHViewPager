@@ -115,11 +115,6 @@
     _menuButtons = [[NSMutableArray alloc] init];
     _contentViews = [[NSMutableArray alloc] init];
     _contentViewControllersViews = [[NSMutableDictionary alloc] init];
-    
-    if ( [self.dataSource respondsToSelector:@selector(colorForMenuInViewPager:)]) {
-        _topTabScroll.backgroundColor = [self.dataSource colorForMenuInViewPager:self];
-    }
-    
     UISwipeGestureRecognizer *rightSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(rightSwipeAction:)];
     rightSwipe.direction = UISwipeGestureRecognizerDirectionRight;
     
@@ -174,6 +169,9 @@
 }
 
 -(void)setUpTopTab{
+    if ( [self.dataSource respondsToSelector:@selector(backgroundColorForMenuInViewPager:)]) {
+        _topTabScroll.backgroundColor = [self.dataSource backgroundColorForMenuInViewPager:self];
+    }
     NSInteger dataItems = [self.dataSource numberOfPagesInViewPager:self];
     for (NSInteger i = 0; i < dataItems; i++) {
         UIButton *menuButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -183,11 +181,16 @@
         if ([self.dataSource respondsToSelector:@selector(viewPager:titleForPageMenuAtIndex:)] && (![self.dataSource respondsToSelector:@selector(viewPager:imageForPageMenuAtIndex:)] || ![self.dataSource viewPager:self imageForPageMenuAtIndex:i])) {
             NSString *buttonTitle = [self.dataSource viewPager:self titleForPageMenuAtIndex:i];
             [menuButton setTitle:buttonTitle forState:UIControlStateNormal];
-            [menuButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-            if ( [self.dataSource respondsToSelector:@selector(fontForMenu:)] ) {
-                menuButton.titleLabel.font = [self.dataSource fontForMenu:self];
+            if ( [self.dataSource respondsToSelector:@selector(fontForMenuInViewPager:)] ) {
+                menuButton.titleLabel.font = [self.dataSource fontForMenuInViewPager:self];
             } else {
                 menuButton.titleLabel.font = [UIFont systemFontOfSize:12.0f];
+            }
+            
+            if ( [self.dataSource respondsToSelector:@selector(textColorForMenuInViewPager:)] ) {
+                [menuButton setTitleColor:[self.dataSource textColorForMenuInViewPager:self] forState:UIControlStateNormal];
+            } else {
+                [menuButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
             }
             menuButton.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
             menuButton.titleLabel.numberOfLines = 0;
