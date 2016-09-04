@@ -179,7 +179,7 @@ Please refer to the [open issue list](https://github.com/shabib87/SHViewPager/is
 
 ## Contact
 
-Share feedbacks and ideas to improve this project, I would love to hear them out. I would also greatly appreciate if you follow me on [@shabib_hossain](https://twitter.com/shabib_hossain).
+Share feedbacks and ideas to improve this project, I would love to hear them out. I would also greatly appreciate if you follow me on [Twitter at @shabib_hossain](https://twitter.com/shabib_hossain).
 
 ## License
 
