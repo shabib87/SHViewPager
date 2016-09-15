@@ -19,7 +19,6 @@
     * [Source files](#source-files)
  * [How to use](#how-to-use)
  * [Known Issues](#known-issues)
- * [Using in iOS 7](#using-in-ios-7)
  * [Author](#author)
  * [Contact](#contact)
  * [License](#license)
@@ -168,10 +167,6 @@ override func viewDidLoad() {
 ## Known Issues
 
 Please refer to the [open issue list](https://github.com/shabib87/SHViewPager/issues?q=is%3Aopen+is%3Aissue).
-
-## Using in iOS 7
-
-`SHViewPager` version 2.0 does not support iOS 7. If you are willing to use it in iOS 6 and iOS 7, please refer to the [version 1.0](https://github.com/shabib87/SHViewPager/releases/tag/v1.0).
 
 ## Author
 
