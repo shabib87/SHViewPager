@@ -2,7 +2,7 @@
 
 ## [2.0.4](https://github.com/shabib87/SHViewPager/tree/HEAD)
 
-[Full Changelog](https://github.com/shabib87/SHViewPager/compare/2.0.2...HEAD)
+[Full Changelog](https://github.com/shabib87/SHViewPager/compare/2.0.3...HEAD)
 
 **Implemented enhancements:**
 
@@ -12,6 +12,9 @@
 **Merged pull requests:**
 
 - Development [\#25](https://github.com/shabib87/SHViewPager/pull/25) ([shabib87](https://github.com/shabib87))
+
+## [2.0.3](https://github.com/shabib87/SHViewPager/tree/2.0.3) (2016-09-20)
+[Full Changelog](https://github.com/shabib87/SHViewPager/compare/2.0.2...2.0.3)
 
 ## [2.0.2](https://github.com/shabib87/SHViewPager/tree/2.0.2) (2016-08-29)
 [Full Changelog](https://github.com/shabib87/SHViewPager/compare/2.0.1...2.0.2)
