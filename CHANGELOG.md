@@ -1,5 +1,24 @@
 # Change Log
 
+## [2.0.3](https://github.com/shabib87/SHViewPager/tree/HEAD)
+
+[Full Changelog](https://github.com/shabib87/SHViewPager/compare/2.0.2...HEAD)
+
+**Implemented enhancements:**
+
+- Create delegate to change menu title font color [\#23](https://github.com/shabib87/SHViewPager/issues/23)
+- Organize delegate and datasource methods [\#22](https://github.com/shabib87/SHViewPager/issues/22)
+
+**Merged pull requests:**
+
+- Development [\#25](https://github.com/shabib87/SHViewPager/pull/25) ([shabib87](https://github.com/shabib87))
+
+## [2.0.2](https://github.com/shabib87/SHViewPager/tree/2.0.2) (2016-08-29)
+[Full Changelog](https://github.com/shabib87/SHViewPager/compare/2.0.1...2.0.2)
+
+## [2.0.1](https://github.com/shabib87/SHViewPager/tree/2.0.1) (2016-08-29)
+[Full Changelog](https://github.com/shabib87/SHViewPager/compare/2.0.0...2.0.1)
+
 ## [2.0.0](https://github.com/shabib87/SHViewPager/tree/2.0.0) (2016-08-29)
 [Full Changelog](https://github.com/shabib87/SHViewPager/compare/v1.0...2.0.0)
 
