@@ -1,10 +1,8 @@
-EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) $(PLATFORM_DIR)/Developer/Library/Frameworks "$PODS_CONFIGURATION_BUILD_DIR/Expecta" "$PODS_CONFIGURATION_BUILD_DIR/Expecta+Snapshots" "$PODS_CONFIGURATION_BUILD_DIR/FBSnapshotTestCase" "$PODS_CONFIGURATION_BUILD_DIR/PodAsset" "$PODS_CONFIGURATION_BUILD_DIR/SHViewPager" "$PODS_CONFIGURATION_BUILD_DIR/Specta"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/PodAsset" "$PODS_CONFIGURATION_BUILD_DIR/SHViewPager"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/Expecta+Snapshots/Expecta_Snapshots.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Expecta/Expecta.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/FBSnapshotTestCase/FBSnapshotTestCase.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/PodAsset/PodAsset.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/SHViewPager/SHViewPager.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Specta/Specta.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "Expecta" -framework "Expecta_Snapshots" -framework "FBSnapshotTestCase" -framework "PodAsset" -framework "SHViewPager" -framework "Specta"
-OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/PodAsset/PodAsset.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/SHViewPager/SHViewPager.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "PodAsset" -framework "SHViewPager"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}/Pods

@@ -27,6 +27,7 @@
 //
 
 #import "SHViewPagerController.h"
+#import "SHViewPager.h"
 
 static NSString * const currentTranslucentStatusNavBarKey = @"currentTranslucentStatusNavBarKey";
 static NSString * const currentTranslucentStatusTabBarKey = @"currentTranslucentStatusTabBarKey";

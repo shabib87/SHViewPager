@@ -77,17 +77,27 @@
     return contentVC;
 }
 
+- (UIImage *)viewPager:(SHViewPager *)viewPager imageForPageMenuAtIndex:(NSInteger)index {
+    NSString *imageName = [NSString stringWithFormat:@"Menu%ld", index + 1];
+    return [UIImage imageNamed:imageName];
+}
+
+#pragma mark - SHViewPagerDelegate stack
+
+- (SHViewPagerMenuWidthType)menuWidthTypeInViewPager:(SHViewPager *)viewPager {
+    return SHViewPagerMenuWidthTypeNarrow;
+}
+
+- (NSString *)viewPager:(SHViewPager *)viewPager headerTitleForPageMenuAtIndex:(NSInteger)index {
+    return [menuItems objectAtIndex:index];
+}
+
 - (UIImage *)indexIndicatorImageForViewPager:(SHViewPager *)viewPager {
     return [UIImage imageNamed:@"IndexIndicatorIcon"];
 }
 
 - (UIImage *)indexIndicatorImageDuringScrollAnimationForViewPager:(SHViewPager *)viewPager {
     return [UIImage imageNamed:@"IndexIndicatorMovingIcon"];
-}
-
-- (UIImage *)viewPager:(SHViewPager *)viewPager imageForPageMenuAtIndex:(NSInteger)index {
-    NSString *imageName = [NSString stringWithFormat:@"Menu%ld", index + 1];
-    return [UIImage imageNamed:imageName];
 }
 
 - (UIImage *)viewPager:(SHViewPager *)viewPager highlitedImageForPageMenuAtIndex:(NSInteger)index {
@@ -99,16 +109,6 @@
     NSString *imageName = [NSString stringWithFormat:@"Menu%ld_h", index + 1];
     return [UIImage imageNamed:imageName];
 }
-
-- (NSString *)viewPager:(SHViewPager *)viewPager headerTitleForPageMenuAtIndex:(NSInteger)index {
-    return [menuItems objectAtIndex:index];
-}
-
-- (SHViewPagerMenuWidthType)menuWidthTypeInViewPager:(SHViewPager *)viewPager {
-    return SHViewPagerMenuWidthTypeNarrow;
-}
-
-#pragma mark - SHViewPagerDelegate stack
 
 - (void)firstContentPageLoadedForViewPager:(SHViewPager *)viewPager {
     NSLog(@"first viewcontroller content loaded");
