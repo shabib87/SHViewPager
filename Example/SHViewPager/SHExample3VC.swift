@@ -72,6 +72,15 @@ extension SHExample3VC: SHViewPagerDataSource {
         return contentVC
     }
     
+    func viewPager(viewPager: SHViewPager, titleForPageMenuAtIndex index: Int) -> String {
+        return menuItems[index] as! String
+    }
+}
+
+// MARK: - SHViewPagerDelegate
+
+extension SHExample3VC: SHViewPagerDelegate {
+    
     func indexIndicatorImageForViewPager(viewPager: SHViewPager) -> UIImage {
         return UIImage(named: "IndexIndicatorIcon")!
     }
@@ -83,15 +92,6 @@ extension SHExample3VC: SHViewPagerDataSource {
     func menuWidthTypeInViewPager(viewPager: SHViewPager) -> SHViewPagerMenuWidthType {
         return .Default
     }
-    
-    func viewPager(viewPager: SHViewPager, titleForPageMenuAtIndex index: Int) -> String {
-        return menuItems[index] as! String
-    }
-}
-
-// MARK: - SHViewPagerDelegate
-
-extension SHExample3VC: SHViewPagerDelegate {
     
     func firstContentPageLoadedForViewPager(viewPager: SHViewPager) {
         print("first viewcontroller content loaded")

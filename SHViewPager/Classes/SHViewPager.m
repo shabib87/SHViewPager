@@ -154,9 +154,9 @@
 #pragma mark - create view
 
 -(void)setIndicatorImage {
-    if ([self.dataSource respondsToSelector:@selector(indexIndicatorImageForViewPager:)]) {
+    if ([self.delegate respondsToSelector:@selector(indexIndicatorImageForViewPager:)]) {
         _indexIndicatorImageView.backgroundColor = [UIColor clearColor];
-        UIImage *indexIndicatorImage = [self.dataSource indexIndicatorImageForViewPager:self];
+        UIImage *indexIndicatorImage = [self.delegate indexIndicatorImageForViewPager:self];
         _indexIndicatorImageView.image = indexIndicatorImage;
     } else {
         _indexIndicatorImageView.backgroundColor = [UIColor redColor];
@@ -169,8 +169,8 @@
 }
 
 -(void)setUpTopTab{
-    if ( [self.dataSource respondsToSelector:@selector(backgroundColorForMenuInViewPager:)]) {
-        _topTabScroll.backgroundColor = [self.dataSource backgroundColorForMenuInViewPager:self];
+    if ( [self.delegate respondsToSelector:@selector(backgroundColorForMenuInViewPager:)]) {
+        _topTabScroll.backgroundColor = [self.delegate backgroundColorForMenuInViewPager:self];
     }
     NSInteger dataItems = [self.dataSource numberOfPagesInViewPager:self];
     for (NSInteger i = 0; i < dataItems; i++) {
@@ -181,14 +181,14 @@
         if ([self.dataSource respondsToSelector:@selector(viewPager:titleForPageMenuAtIndex:)] && (![self.dataSource respondsToSelector:@selector(viewPager:imageForPageMenuAtIndex:)] || ![self.dataSource viewPager:self imageForPageMenuAtIndex:i])) {
             NSString *buttonTitle = [self.dataSource viewPager:self titleForPageMenuAtIndex:i];
             [menuButton setTitle:buttonTitle forState:UIControlStateNormal];
-            if ( [self.dataSource respondsToSelector:@selector(fontForMenuInViewPager:)] ) {
-                menuButton.titleLabel.font = [self.dataSource fontForMenuInViewPager:self];
+            if ( [self.delegate respondsToSelector:@selector(fontForMenuInViewPager:)] ) {
+                menuButton.titleLabel.font = [self.delegate fontForMenuInViewPager:self];
             } else {
                 menuButton.titleLabel.font = [UIFont systemFontOfSize:12.0f];
             }
             
-            if ( [self.dataSource respondsToSelector:@selector(textColorForMenuInViewPager:)] ) {
-                [menuButton setTitleColor:[self.dataSource textColorForMenuInViewPager:self] forState:UIControlStateNormal];
+            if ( [self.delegate respondsToSelector:@selector(textColorForMenuInViewPager:)] ) {
+                [menuButton setTitleColor:[self.delegate textColorForMenuInViewPager:self] forState:UIControlStateNormal];
             } else {
                 [menuButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
             }
@@ -221,8 +221,8 @@
     }
     [self setUpContentViewForTargetIndex:0];
     [self setUpHeaderTitleTextAtIndex:0];
-    if ([self.dataSource respondsToSelector:@selector(viewPager:selectedImageForPageMenuAtIndex:)] && [self.dataSource respondsToSelector:@selector(viewPager:imageForPageMenuAtIndex:)]) {
-        UIImage *buttonImage = [self.dataSource viewPager:self selectedImageForPageMenuAtIndex:0];
+    if ([self.delegate respondsToSelector:@selector(viewPager:selectedImageForPageMenuAtIndex:)] && [self.delegate respondsToSelector:@selector(viewPager:imageForPageMenuAtIndex:)]) {
+        UIImage *buttonImage = [self.delegate viewPager:self selectedImageForPageMenuAtIndex:0];
         UIButton *button = [_menuButtons objectAtIndex:0];
         [button setImage:buttonImage forState:UIControlStateNormal];
         [self notifyDelegateAboutFirstContentPageLoaded];
@@ -251,8 +251,8 @@
 }
 
 -(void)setUpHeaderTitleTextAtIndex:(NSInteger)index {
-    if ([self.dataSource respondsToSelector:@selector(viewPager:headerTitleForPageMenuAtIndex:)]) {
-        NSString *headerTitle = [self.dataSource viewPager:self headerTitleForPageMenuAtIndex:index];
+    if ([self.delegate respondsToSelector:@selector(viewPager:headerTitleForPageMenuAtIndex:)]) {
+        NSString *headerTitle = [self.delegate viewPager:self headerTitleForPageMenuAtIndex:index];
         _headerTitleLabel.text = headerTitle;
     } else {
         _headerTitleLabel.hidden = YES;
@@ -300,8 +300,8 @@
 }
 
 -(SHViewPagerMenuWidthType)menuWidthType {
-    if ([self.dataSource respondsToSelector:@selector(menuWidthTypeInViewPager:)]) {
-        return [self.dataSource menuWidthTypeInViewPager:self];
+    if ([self.delegate respondsToSelector:@selector(menuWidthTypeInViewPager:)]) {
+        return [self.delegate menuWidthTypeInViewPager:self];
     }
     return SHViewPagerMenuWidthTypeDefault;
 }
@@ -368,16 +368,16 @@
     
     [UIView animateWithDuration:0.3f animations:^{
         
-        if ([self.dataSource respondsToSelector:@selector(indexIndicatorImageForViewPager:)] && [self.dataSource respondsToSelector:@selector(indexIndicatorImageDuringScrollAnimationForViewPager:)]) {
-            _indexIndicatorImageView.image = [self.dataSource indexIndicatorImageDuringScrollAnimationForViewPager:self];
+        if ([self.delegate respondsToSelector:@selector(indexIndicatorImageForViewPager:)] && [self.delegate respondsToSelector:@selector(indexIndicatorImageDuringScrollAnimationForViewPager:)]) {
+            _indexIndicatorImageView.image = [self.delegate indexIndicatorImageDuringScrollAnimationForViewPager:self];
         }
         
-        if ([self.dataSource respondsToSelector:@selector(viewPager:selectedImageForPageMenuAtIndex:)] && [self.dataSource respondsToSelector:@selector(viewPager:imageForPageMenuAtIndex:)]) {
+        if ([self.delegate respondsToSelector:@selector(viewPager:selectedImageForPageMenuAtIndex:)] && [self.delegate respondsToSelector:@selector(viewPager:imageForPageMenuAtIndex:)]) {
             UIImage *buttonImage = [self.dataSource viewPager:self imageForPageMenuAtIndex:fromIndex];
             UIButton *button = [_menuButtons objectAtIndex:fromIndex];
             [button setImage:buttonImage forState:UIControlStateNormal];
             
-            UIImage *selectedImage = [self.dataSource viewPager:self selectedImageForPageMenuAtIndex:toIndex];
+            UIImage *selectedImage = [self.delegate viewPager:self selectedImageForPageMenuAtIndex:toIndex];
             UIButton *selectedButton = [_menuButtons objectAtIndex:toIndex];
             [selectedButton setImage:selectedImage forState:UIControlStateNormal];
         }
@@ -393,8 +393,8 @@
             [self.delegate viewPager:self didMoveToPageAtIndex:toIndex fromIndex:fromIndex];
         }
         
-        if ([self.dataSource respondsToSelector:@selector(indexIndicatorImageForViewPager:)] && [self.dataSource respondsToSelector:@selector(indexIndicatorImageDuringScrollAnimationForViewPager:)]) {
-            _indexIndicatorImageView.image = [self.dataSource indexIndicatorImageForViewPager:self];
+        if ([self.delegate respondsToSelector:@selector(indexIndicatorImageForViewPager:)] && [self.delegate respondsToSelector:@selector(indexIndicatorImageDuringScrollAnimationForViewPager:)]) {
+            _indexIndicatorImageView.image = [self.delegate indexIndicatorImageForViewPager:self];
         }
     }];
 }

@@ -1,39 +1,20 @@
 PODS:
-  - Expecta (1.0.5)
-  - Expecta+Snapshots (3.0.0):
-    - Expecta (~> 1.0)
-    - FBSnapshotTestCase/Core (~> 2.0)
-    - Specta (~> 1.0)
-  - FBSnapshotTestCase (2.1.2):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.2)
-  - FBSnapshotTestCase/Core (2.1.2)
-  - FBSnapshotTestCase/SwiftSupport (2.1.2):
-    - FBSnapshotTestCase/Core
   - PodAsset (0.12.0)
-  - SHViewPager (2.0.1):
+  - SHViewPager (2.0.2):
     - PodAsset
-  - Specta (1.0.5)
 
 DEPENDENCIES:
-  - Expecta
-  - Expecta+Snapshots
-  - FBSnapshotTestCase
   - PodAsset
   - SHViewPager (from `../`)
-  - Specta
 
 EXTERNAL SOURCES:
   SHViewPager:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
-  Expecta+Snapshots: c343f410c7a6392f3e22e78f94c44b6c0749a516
-  FBSnapshotTestCase: 918c55861356ee83aee7843d759f55a18ff6982b
   PodAsset: d6e724524e63725ef0c579354819ccc2dcbcf920
-  SHViewPager: ae47ebaa21f44794e4097269828331604ac810d4
-  Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
+  SHViewPager: 7ef7933654feb65b91e25d2d26f2444689a6d3c3
 
-PODFILE CHECKSUM: 2163bfb7f216af2b7076be3e257e9c848a654c22
+PODFILE CHECKSUM: 3c7fca56e497210f27fc2c8fefc7312a9b01fbb0
 
 COCOAPODS: 1.0.1

@@ -75,23 +75,23 @@
     return contentVC;
 }
 
-- (UIImage *)indexIndicatorImageForViewPager:(SHViewPager *)viewPager {
-    return [UIImage imageNamed:@"IndexIndicatorIcon"];
-}
-
-- (UIImage *)indexIndicatorImageDuringScrollAnimationForViewPager:(SHViewPager *)viewPager {
-    return [UIImage imageNamed:@"IndexIndicatorMovingIcon"];
-}
-
 - (NSString *)viewPager:(SHViewPager *)viewPager titleForPageMenuAtIndex:(NSInteger)index {
     return [menuItems objectAtIndex:index];
+}
+
+#pragma mark - SHViewPagerDelegate stack
+
+- (UIImage *)indexIndicatorImageForViewPager:(SHViewPager *)viewPager {
+    return [UIImage imageNamed:@"IndexIndicatorIcon"];
 }
 
 - (SHViewPagerMenuWidthType)menuWidthTypeInViewPager:(SHViewPager *)viewPager {
     return SHViewPagerMenuWidthTypeWide;
 }
 
-#pragma mark - SHViewPagerDelegate stack
+- (UIImage *)indexIndicatorImageDuringScrollAnimationForViewPager:(SHViewPager *)viewPager {
+    return [UIImage imageNamed:@"IndexIndicatorMovingIcon"];
+}
 
 - (void)firstContentPageLoadedForViewPager:(SHViewPager *)viewPager {
     NSLog(@"first viewcontroller content loaded");
