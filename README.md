@@ -68,7 +68,7 @@ end
 1. Download the [latest code version](http://github.com/shabib87/SHViewPager/archive/master.zip) or add the repository as a git submodule to your git-tracked project.
 2. Drag and drop the **Classes** and the **Resources** directory from the archive in your project navigator. Make sure to select *Copy items* when asked if you extracted the code archive outside of your project.
 
-Use SHViewPager wherever you need it with `#import <SHViewPager/SHViewPager.h>` in Objective-C and `import SHViewPager` in Swift.
+Use SHViewPager wherever you need it with `#import <SHViewPager/SHViewPagerModule.h>` in Objective-C and `import SHViewPager` in Swift.
 
 ##How to use
 

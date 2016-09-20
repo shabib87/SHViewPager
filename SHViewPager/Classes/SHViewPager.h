@@ -28,7 +28,6 @@
 
 #import <UIKit/UIKit.h>
 #import "SHBaseView.h"
-#import "SHViewPagerController.h"
 #import "SHViewPagerDelegate.h"
 #import "SHViewPagerDataSource.h"
 

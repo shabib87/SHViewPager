@@ -133,6 +133,7 @@
 		E394F477B0C84AA0C8844FD3918624B1 /* Pods-SHViewPager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SHViewPager_Example.modulemap"; sourceTree = "<group>"; };
 		E6BEEE98DCB49414410A8B606726CF34 /* SHViewPager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SHViewPager-prefix.pch"; sourceTree = "<group>"; };
 		EA6A5055C2124FC623049D583A4B964A /* SHBaseView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SHBaseView.h; sourceTree = "<group>"; };
+		F03A1B901D91A7AD009F242D /* SHViewPagerModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHViewPagerModule.h; sourceTree = "<group>"; };
 		F95A48E9B39B13AA7A5905BDFEBED5E9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -284,6 +285,7 @@
 				BC41F5C664B917C9AC6932AB4C9B17A8 /* SHViewPagerController.m */,
 				0638402CDA6F6FC3DEAC71C3C781959E /* SHViewPagerDataSource.h */,
 				500B79D69E878E91078E6BDBCCDBACD1 /* SHViewPagerDelegate.h */,
+				F03A1B901D91A7AD009F242D /* SHViewPagerModule.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
