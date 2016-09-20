@@ -1,12 +1,16 @@
 # Change Log
 
-## [2.0.5](https://github.com/shabib87/SHViewPager/tree/HEAD)
+## [2.0.6](https://github.com/shabib87/SHViewPager/tree/HEAD)
 
-[Full Changelog](https://github.com/shabib87/SHViewPager/compare/2.0.4...HEAD)
+[Full Changelog](https://github.com/shabib87/SHViewPager/compare/2.0.5...HEAD)
 
 **Fixed bugs:**
 
+- Resolve 'UIView \*' inherited from 'UIViewController' warning [\#27](https://github.com/shabib87/SHViewPager/issues/27)
 - Resolve cocoapod version conflict [\#26](https://github.com/shabib87/SHViewPager/issues/26)
+
+## [2.0.5](https://github.com/shabib87/SHViewPager/tree/2.0.5) (2016-09-20)
+[Full Changelog](https://github.com/shabib87/SHViewPager/compare/2.0.4...2.0.5)
 
 ## [2.0.4](https://github.com/shabib87/SHViewPager/tree/2.0.4) (2016-09-20)
 [Full Changelog](https://github.com/shabib87/SHViewPager/compare/2.0.3...2.0.4)
