@@ -1,20 +1,30 @@
 # Change Log
 
-## [2.0.4](https://github.com/shabib87/SHViewPager/tree/HEAD)
+## [2.0.5](https://github.com/shabib87/SHViewPager/tree/HEAD)
 
-[Full Changelog](https://github.com/shabib87/SHViewPager/compare/2.0.3...HEAD)
+[Full Changelog](https://github.com/shabib87/SHViewPager/compare/2.0.4...HEAD)
+
+**Fixed bugs:**
+
+- Resolve cocoapod version conflict [\#26](https://github.com/shabib87/SHViewPager/issues/26)
+
+## [2.0.4](https://github.com/shabib87/SHViewPager/tree/2.0.4) (2016-09-20)
+[Full Changelog](https://github.com/shabib87/SHViewPager/compare/2.0.3...2.0.4)
+
+**Implemented enhancements:**
+
+- Organize delegate and datasource methods [\#22](https://github.com/shabib87/SHViewPager/issues/22)
+
+## [2.0.3](https://github.com/shabib87/SHViewPager/tree/2.0.3) (2016-09-20)
+[Full Changelog](https://github.com/shabib87/SHViewPager/compare/2.0.2...2.0.3)
 
 **Implemented enhancements:**
 
 - Create delegate to change menu title font color [\#23](https://github.com/shabib87/SHViewPager/issues/23)
-- Organize delegate and datasource methods [\#22](https://github.com/shabib87/SHViewPager/issues/22)
 
 **Merged pull requests:**
 
 - Development [\#25](https://github.com/shabib87/SHViewPager/pull/25) ([shabib87](https://github.com/shabib87))
-
-## [2.0.3](https://github.com/shabib87/SHViewPager/tree/2.0.3) (2016-09-20)
-[Full Changelog](https://github.com/shabib87/SHViewPager/compare/2.0.2...2.0.3)
 
 ## [2.0.2](https://github.com/shabib87/SHViewPager/tree/2.0.2) (2016-08-29)
 [Full Changelog](https://github.com/shabib87/SHViewPager/compare/2.0.1...2.0.2)
