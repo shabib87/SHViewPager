@@ -32,7 +32,7 @@ class SHContentViewController: UIViewController {
     var selectionIndicatorString: String!
     var menuIndex: Int = 0
     
-    @IBOutlet private var indicatorLabel: UILabel!
+    @IBOutlet fileprivate var indicatorLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +43,7 @@ class SHContentViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    @IBAction private func pushTestAction(sender: AnyObject) {
+    @IBAction fileprivate func pushTestAction(_ sender: AnyObject) {
         let pushVC = SHExamplePushVC(nibName: "SHExamplePushVC", bundle: nil)
         pushVC.navTitleString = "Content from Menu \(menuIndex)"
         self.navigationController?.pushViewController(pushVC, animated: true)

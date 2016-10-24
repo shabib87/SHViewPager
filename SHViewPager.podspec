@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SHViewPager'
-  s.version          = '2.0.6'
+  s.version          = '2.0.7'
   s.summary          = 'A simple view pager for iOS. Compatible with iOS 8.0 or later.'
   s.description      = <<-DESC
 A simple view pager for iOS. Compatible with iOS 8.0 or later, that imitates the view pager vastly used on android apps.

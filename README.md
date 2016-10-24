@@ -117,30 +117,30 @@ or,
 **Swift: The required datasource methods are**
 
 ```swift
-func numberOfPagesInViewPager(viewPager: SHViewPager) -> Int
+func numberOfPages(in viewPager: SHViewPager) -> Int
 ```
 ```swift
-func containerControllerForViewPager(viewPager: SHViewPager) -> UIViewController
+func containerController(for viewPager: SHViewPager) -> UIViewController
 ```
 ```swift
-func viewPager(viewPager: SHViewPager, controllerForPageAtIndex index: Int) -> UIViewController
+func viewPager(_ viewPager: SHViewPager, controllerForPageAt index: Int) -> UIViewController
 ````
 
 and,
 
 
 ```swift
-func viewPager(viewPager: SHViewPager, titleForPageMenuAtIndex index: Int) -> String
+func viewPager(_ viewPager: SHViewPager, titleForPageMenuAt index: Int) -> String
 ````
 
 or,
 
 
 ```swift
-func viewPager(viewPager: SHViewPager, imageForPageMenuAtIndex index: Int) -> UIImage
+func viewPager(_ viewPager: SHViewPager, imageForPageMenuAt index: Int) -> UIImage
 ````
 
-To display the contents, you need to call the instance method `reloadData` in your desired method block, typically in `viewDidLoad`.
+To display the contents, you need to call the instance method `reloadData` in your desired method block; typically in `viewDidLoad`; and `pagerWillLayoutSubviews` in `viewWillLayoutSubviews`.
 
 -Example:
 
@@ -152,16 +152,28 @@ To display the contents, you need to call the instance method `reloadData` in yo
     // your code
     [viewPager reloadData];
 }
+
+-(void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+    [_pager pagerWillLayoutSubviews];
+}
+
 ```
 
 *Swift*
 
-```objc
+```swift
 override func viewDidLoad() {
     super.viewDidLoad()
     // your code
     pager.reloadData()
 }
+
+override func viewWillLayoutSubviews() {
+    super.viewWillLayoutSubviews()
+    pager.pagerWillLayoutSubviews()
+}
+
 ```
 
 ## Known Issues

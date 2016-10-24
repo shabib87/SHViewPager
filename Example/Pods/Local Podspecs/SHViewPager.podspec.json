@@ -1,6 +1,6 @@
 {
   "name": "SHViewPager",
-  "version": "2.0.2",
+  "version": "2.0.6",
   "summary": "A simple view pager for iOS. Compatible with iOS 8.0 or later.",
   "description": "A simple view pager for iOS. Compatible with iOS 8.0 or later, that imitates the view pager vastly used on android apps.",
   "homepage": "https://github.com/shabib87/SHViewPager",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/shabib87/SHViewPager.git",
-    "tag": "2.0.2"
+    "tag": "2.0.6"
   },
   "social_media_url": "https://twitter.com/shabib_hossain",
   "platforms": {

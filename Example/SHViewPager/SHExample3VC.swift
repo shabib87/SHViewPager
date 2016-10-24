@@ -30,8 +30,8 @@ import SHViewPager
 
 class SHExample3VC: UIViewController {
 
-    @IBOutlet private var pager: SHViewPager!
-    private var menuItems = []
+    @IBOutlet fileprivate var pager: SHViewPager!
+    fileprivate var menuItems = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,15 +56,15 @@ class SHExample3VC: UIViewController {
 
 extension SHExample3VC: SHViewPagerDataSource {
     
-    func numberOfPagesInViewPager(viewPager: SHViewPager) -> Int {
+    func numberOfPages(in viewPager: SHViewPager) -> Int {
         return menuItems.count
     }
     
-    func containerControllerForViewPager(viewPager: SHViewPager) -> UIViewController {
+    func containerController(for viewPager: SHViewPager) -> UIViewController {
         return self
     }
     
-    func viewPager(viewPager: SHViewPager, controllerForPageAtIndex index: Int) -> UIViewController {
+    func viewPager(_ viewPager: SHViewPager, controllerForPageAt index: Int) -> UIViewController {
         
         let contentVC = SHContentViewController(nibName: "SHContentViewController", bundle: nil)
         contentVC.menuIndex = index + 1
@@ -72,8 +72,8 @@ extension SHExample3VC: SHViewPagerDataSource {
         return contentVC
     }
     
-    func viewPager(viewPager: SHViewPager, titleForPageMenuAtIndex index: Int) -> String {
-        return menuItems[index] as! String
+    func viewPager(_ viewPager: SHViewPager, titleForPageMenuAt index: Int) -> String {
+        return menuItems[index] 
     }
 }
 
@@ -81,27 +81,27 @@ extension SHExample3VC: SHViewPagerDataSource {
 
 extension SHExample3VC: SHViewPagerDelegate {
     
-    func indexIndicatorImageForViewPager(viewPager: SHViewPager) -> UIImage {
+    func indexIndicatorImage(for viewPager: SHViewPager) -> UIImage {
         return UIImage(named: "IndexIndicatorIcon")!
     }
     
-    func indexIndicatorImageDuringScrollAnimationForViewPager(viewPager: SHViewPager) -> UIImage {
+    func indexIndicatorImageDuringScrollAnimation(for viewPager: SHViewPager) -> UIImage {
         return UIImage(named: "IndexIndicatorMovingIcon")!
     }
     
-    func menuWidthTypeInViewPager(viewPager: SHViewPager) -> SHViewPagerMenuWidthType {
-        return .Default
+    func menuWidthType(in viewPager: SHViewPager) -> SHViewPagerMenuWidthType {
+        return .default
     }
     
-    func firstContentPageLoadedForViewPager(viewPager: SHViewPager) {
+    func firstContentPageLoaded(for viewPager: SHViewPager) {
         print("first viewcontroller content loaded")
     }
     
-    func viewPager(viewPager: SHViewPager, willMoveToPageAtIndex toIndex: Int, fromIndex: Int) {
+    func viewPager(_ viewPager: SHViewPager, willMoveToPageAt toIndex: Int, from fromIndex: Int) {
         print("content will move to page \(toIndex) from page: \(fromIndex)");
     }
     
-    func viewPager(viewPager: SHViewPager, didMoveToPageAtIndex toIndex: Int, fromIndex: Int) {
+    func viewPager(_ viewPager: SHViewPager, didMoveToPageAt toIndex: Int, from fromIndex: Int) {
         print("content moved to page \(toIndex) from page: \(fromIndex)");
     }
 }

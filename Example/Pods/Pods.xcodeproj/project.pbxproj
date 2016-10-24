@@ -7,31 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03A9DF1BCD7096D62A90CAA257A85FB5 /* SHViewPagerDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 0638402CDA6F6FC3DEAC71C3C781959E /* SHViewPagerDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0379EB5672EAF97D0EFA7AEEAC194666 /* SHViewPagerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 26E43C156362F5049A914C9469FE581D /* SHViewPagerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		044466B38FBBE7B0F902D1A17BB59EE4 /* SHViewPager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1248CC775D996BAD7FF98B2D2D294C61 /* SHViewPager-dummy.m */; };
 		08BB52DD84D4DB2C6182597C71D55C2B /* Pods-SHViewPager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1603D5DCFC21363C96EE1DFFF6CB779A /* Pods-SHViewPager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AC21119D91198E98C23B6EAC6177DEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67417DB3820A7E51B61CA0B8D7798CF7 /* Foundation.framework */; };
+		0CE0E2B0B03CD1CCF8F33A84953A3A52 /* SHViewPager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4441E2CA585C1EB81BC1D99840A963F3 /* SHViewPager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		101F9B5D29ABC6A6CC2B7DF11467803A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F6D7FE9E991AADE022F4C137732517 /* UIKit.framework */; };
 		19AC5A4256D37971F57B5FCE9F079925 /* Pods-SHViewPager_Example-SHViewPager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E21157477557C292772D159F4C4FDC /* Pods-SHViewPager_Example-SHViewPager_Tests-dummy.m */; };
-		1BC4D82B9EAEDF74C36A8092BFABAFA3 /* SHViewPagerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 500B79D69E878E91078E6BDBCCDBACD1 /* SHViewPagerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1EB779C8C7DF6B1AB5AB6FAD9CF8D035 /* SHViewPager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CC76F31F70728DB1F00C985522583CC0 /* SHViewPager.bundle */; };
+		270A138ABB1181103FA23AC1331CB411 /* SHBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = B28DF4E777AED6A5C93552530327F715 /* SHBaseView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		29E0E47B54D79AF49B0A578AD24B2404 /* Pods-SHViewPager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71AE9994BF0CC263E75A6C135F0F61F3 /* Pods-SHViewPager_Example-dummy.m */; };
-		49F26A4F8186A190F0A0B6C53D68E349 /* SHBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = EA6A5055C2124FC623049D583A4B964A /* SHBaseView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4A154814A5F153136AE8B0EBB64A0AE3 /* SHViewPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41F5C664B917C9AC6932AB4C9B17A8 /* SHViewPagerController.m */; };
+		2D5FF417D6C271FE3C64383D39D6BF19 /* SHViewPagerDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = CB0FFDB85D4236FA46811164985C84D8 /* SHViewPagerDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3568AA891560160479C254038DF7B137 /* SHViewPagerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F0B9B464CC59F5CA5502FC67A1FD98D /* SHViewPagerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A154814A5F153136AE8B0EBB64A0AE3 /* SHViewPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF109AFFFF19308EBACA0242091833D0 /* SHViewPagerController.m */; };
 		4AC7C2F3B360F17C2E3DB962A5FB8371 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67417DB3820A7E51B61CA0B8D7798CF7 /* Foundation.framework */; };
 		5135FBFB6792C7E104F13080592E9A30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67417DB3820A7E51B61CA0B8D7798CF7 /* Foundation.framework */; };
 		575BECA08E3B8A8488DE058C90DBF626 /* PodAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 1977F494870890F66A86D7AEBB41ED3A /* PodAsset.m */; };
-		60EC45D8A340C97FC96BA0669F3E637C /* SHViewPager.m in Sources */ = {isa = PBXBuildFile; fileRef = D744C3F90EF2AE99BF0DB8179CC7D523 /* SHViewPager.m */; };
-		67A121D613694EA2313B0EE934CCE81B /* SHViewPager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4441E2CA585C1EB81BC1D99840A963F3 /* SHViewPager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		815B7690C826E6AE869D3CE54940151B /* SHBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EB5BD019F010C700EEE3F8F528C38F /* SHBaseView.m */; };
-		8879E3E982570A3C834FFF38D184CADB /* SHViewPagerController.h in Headers */ = {isa = PBXBuildFile; fileRef = DF71050A13246330121B4C3E961EA21F /* SHViewPagerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60EC45D8A340C97FC96BA0669F3E637C /* SHViewPager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE612D27ACDA10DBA86C03B48A300241 /* SHViewPager.m */; };
+		815B7690C826E6AE869D3CE54940151B /* SHBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = A33F2D4F917B57ADD3EE8A1E6484A1F1 /* SHBaseView.m */; };
+		95548ACEF8D03D73E90E791CCF618020 /* SHViewPagerModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 90493067B199A9A04B8A63B81C5034E0 /* SHViewPagerModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C771034B13C55FA6A30CDF2098F6A2AC /* PodAsset-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69E1BC5B7D14CEAC59E3FEEFE1EBB6EB /* PodAsset-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2E878B777A63D649F0894D66CA2C22C /* PodAsset-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A914A10A36A237BBEB8D7F87295BDD /* PodAsset-dummy.m */; };
+		D3CF222E376588A574E6EC64FE054F3D /* SHViewPager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DDA8521A95205A6B73BB48E1EE2DC84 /* SHViewPager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D55BE66C3E1EAE48D034841BFB341344 /* SHViewPager.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7C1D283107E52647B467AC78E159C8E /* SHViewPager.xib */; };
 		D6899C4E42991D16A345AA445FFE5EFB /* PodAsset.h in Headers */ = {isa = PBXBuildFile; fileRef = 04FD93A94E4CB0872374A33B16556576 /* PodAsset.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB93F20493E4AAD8D0273344BE16843F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67417DB3820A7E51B61CA0B8D7798CF7 /* Foundation.framework */; };
 		EBF2856492BB33B4398802E7A563494B /* PodAsset.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AE8DCB612783C4B4A729C31B11CD25 /* PodAsset.framework */; };
-		EFCD667842FB9F6BB9300B3E1822E95B /* SHViewPager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D022FDFE9828AFA1DB6AE91BDCDB687 /* SHViewPager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7A9B9B3A7FA3C177DC7C2650496C2FA /* Pods-SHViewPager_Example-SHViewPager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 258AFA43BFC1A8BA8DC68BFAFC00549A /* Pods-SHViewPager_Example-SHViewPager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -85,7 +86,6 @@
 		04FD93A94E4CB0872374A33B16556576 /* PodAsset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PodAsset.h; path = Pod/Classes/PodAsset.h; sourceTree = "<group>"; };
 		05AE8DCB612783C4B4A729C31B11CD25 /* PodAsset.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PodAsset.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05BA4912F7E32D1086F343DA4D0F1FBE /* Pods_SHViewPager_Example_SHViewPager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHViewPager_Example_SHViewPager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0638402CDA6F6FC3DEAC71C3C781959E /* SHViewPagerDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SHViewPagerDataSource.h; sourceTree = "<group>"; };
 		06406E2CAB39D416AB78CC581DE53907 /* Pods-SHViewPager_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SHViewPager_Example-resources.sh"; sourceTree = "<group>"; };
 		08A914A10A36A237BBEB8D7F87295BDD /* PodAsset-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PodAsset-dummy.m"; sourceTree = "<group>"; };
 		1248CC775D996BAD7FF98B2D2D294C61 /* SHViewPager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SHViewPager-dummy.m"; sourceTree = "<group>"; };
@@ -94,9 +94,10 @@
 		1D67F490603047D4F507F1484169B4E5 /* SHViewPager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SHViewPager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23CB8628712607ECA57CF9946E4B7E67 /* Pods-SHViewPager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SHViewPager_Example-frameworks.sh"; sourceTree = "<group>"; };
 		258AFA43BFC1A8BA8DC68BFAFC00549A /* Pods-SHViewPager_Example-SHViewPager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SHViewPager_Example-SHViewPager_Tests-umbrella.h"; sourceTree = "<group>"; };
+		26E43C156362F5049A914C9469FE581D /* SHViewPagerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SHViewPagerDelegate.h; sourceTree = "<group>"; };
 		3DA5D84F3028FCF0F6732AC28F313AFC /* Pods-SHViewPager_Example-SHViewPager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SHViewPager_Example-SHViewPager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4441E2CA585C1EB81BC1D99840A963F3 /* SHViewPager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SHViewPager-umbrella.h"; sourceTree = "<group>"; };
-		500B79D69E878E91078E6BDBCCDBACD1 /* SHViewPagerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SHViewPagerDelegate.h; sourceTree = "<group>"; };
+		4DDA8521A95205A6B73BB48E1EE2DC84 /* SHViewPager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SHViewPager.h; sourceTree = "<group>"; };
 		52865ADCB793262C80D358D015125623 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DA906E5F637D19F79F48268384243D0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EE51BE18BABCDD9157E665B5596D2C7 /* SHViewPager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SHViewPager.modulemap; sourceTree = "<group>"; };
@@ -105,35 +106,35 @@
 		67417DB3820A7E51B61CA0B8D7798CF7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		69E1BC5B7D14CEAC59E3FEEFE1EBB6EB /* PodAsset-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PodAsset-umbrella.h"; sourceTree = "<group>"; };
 		71AE9994BF0CC263E75A6C135F0F61F3 /* Pods-SHViewPager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SHViewPager_Example-dummy.m"; sourceTree = "<group>"; };
+		7F0B9B464CC59F5CA5502FC67A1FD98D /* SHViewPagerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SHViewPagerController.h; sourceTree = "<group>"; };
 		7F560B497F080473FADBC7AFE06C0DFC /* Pods-SHViewPager_Example-SHViewPager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SHViewPager_Example-SHViewPager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8388D6DFF8049FFC6D0E851628F011BF /* Pods-SHViewPager_Example-SHViewPager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SHViewPager_Example-SHViewPager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		8D022FDFE9828AFA1DB6AE91BDCDB687 /* SHViewPager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SHViewPager.h; sourceTree = "<group>"; };
 		8EC17AE43C90E3978EC98EFE21BC4A30 /* SHViewPager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SHViewPager.xcconfig; sourceTree = "<group>"; };
 		8F709C1CF4795B2353DC507FEF0BFB53 /* PodAsset-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PodAsset-prefix.pch"; sourceTree = "<group>"; };
+		90493067B199A9A04B8A63B81C5034E0 /* SHViewPagerModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SHViewPagerModule.h; sourceTree = "<group>"; };
 		90B5D6EC1B80FEF272ADB6473E388A12 /* Pods-SHViewPager_Example-SHViewPager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SHViewPager_Example-SHViewPager_Tests.modulemap"; sourceTree = "<group>"; };
 		920A246557F68BB46D8D44C8F600B71E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94E77C85D3ABBA81D8D5CB2C8965D83E /* PodAsset.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PodAsset.xcconfig; sourceTree = "<group>"; };
 		9DC69B68355831E606E878687F2C78B5 /* Pods-SHViewPager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SHViewPager_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A33F2D4F917B57ADD3EE8A1E6484A1F1 /* SHBaseView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SHBaseView.m; sourceTree = "<group>"; };
 		A5E21157477557C292772D159F4C4FDC /* Pods-SHViewPager_Example-SHViewPager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SHViewPager_Example-SHViewPager_Tests-dummy.m"; sourceTree = "<group>"; };
 		AAEF48B31C6E10C7C8DFDE63EB517BC7 /* Pods-SHViewPager_Example-SHViewPager_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SHViewPager_Example-SHViewPager_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		B05C240C92DB7CFBEAE1299215BDB214 /* Pods-SHViewPager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SHViewPager_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B1EB5BD019F010C700EEE3F8F528C38F /* SHBaseView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SHBaseView.m; sourceTree = "<group>"; };
-		BC41F5C664B917C9AC6932AB4C9B17A8 /* SHViewPagerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SHViewPagerController.m; sourceTree = "<group>"; };
+		B28DF4E777AED6A5C93552530327F715 /* SHBaseView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SHBaseView.h; sourceTree = "<group>"; };
 		C38A3D5654836D8618F45881DBBBEA30 /* Pods_SHViewPager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHViewPager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F6D7FE9E991AADE022F4C137732517 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		CB0FFDB85D4236FA46811164985C84D8 /* SHViewPagerDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SHViewPagerDataSource.h; sourceTree = "<group>"; };
 		CC76F31F70728DB1F00C985522583CC0 /* SHViewPager.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SHViewPager.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE612D27ACDA10DBA86C03B48A300241 /* SHViewPager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SHViewPager.m; sourceTree = "<group>"; };
+		CF109AFFFF19308EBACA0242091833D0 /* SHViewPagerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SHViewPagerController.m; sourceTree = "<group>"; };
 		D5A9CF11DC6120C500538C59C416936C /* PodAsset.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PodAsset.modulemap; sourceTree = "<group>"; };
-		D744C3F90EF2AE99BF0DB8179CC7D523 /* SHViewPager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SHViewPager.m; sourceTree = "<group>"; };
 		D7C1D283107E52647B467AC78E159C8E /* SHViewPager.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SHViewPager.xib; sourceTree = "<group>"; };
 		D950BA6D55F2949FD21485687476FE61 /* Pods-SHViewPager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SHViewPager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		D9AE76D80B3610B267F2B72765529A02 /* Pods-SHViewPager_Example-SHViewPager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SHViewPager_Example-SHViewPager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		DF71050A13246330121B4C3E961EA21F /* SHViewPagerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SHViewPagerController.h; sourceTree = "<group>"; };
 		E2DFB9A4EEB810943685394DA9D22A6A /* ResourceBundle-SHViewPager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SHViewPager-Info.plist"; sourceTree = "<group>"; };
 		E394F477B0C84AA0C8844FD3918624B1 /* Pods-SHViewPager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SHViewPager_Example.modulemap"; sourceTree = "<group>"; };
 		E6BEEE98DCB49414410A8B606726CF34 /* SHViewPager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SHViewPager-prefix.pch"; sourceTree = "<group>"; };
-		EA6A5055C2124FC623049D583A4B964A /* SHBaseView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SHBaseView.h; sourceTree = "<group>"; };
-		F03A1B901D91A7AD009F242D /* SHViewPagerModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHViewPagerModule.h; sourceTree = "<group>"; };
 		F95A48E9B39B13AA7A5905BDFEBED5E9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -217,14 +218,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		39EE6C8D32B8129FB08FC5052C843864 /* SHViewPager */ = {
-			isa = PBXGroup;
-			children = (
-				841A642367297AF6185F8A5D57FAAA4E /* Classes */,
-			);
-			path = SHViewPager;
-			sourceTree = "<group>";
-		};
 		487DCBEC73D8020E3B09F1AAB3520EE4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,22 +267,6 @@
 			);
 			sourceTree = "<group>";
 		};
-		841A642367297AF6185F8A5D57FAAA4E /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				EA6A5055C2124FC623049D583A4B964A /* SHBaseView.h */,
-				B1EB5BD019F010C700EEE3F8F528C38F /* SHBaseView.m */,
-				8D022FDFE9828AFA1DB6AE91BDCDB687 /* SHViewPager.h */,
-				D744C3F90EF2AE99BF0DB8179CC7D523 /* SHViewPager.m */,
-				DF71050A13246330121B4C3E961EA21F /* SHViewPagerController.h */,
-				BC41F5C664B917C9AC6932AB4C9B17A8 /* SHViewPagerController.m */,
-				0638402CDA6F6FC3DEAC71C3C781959E /* SHViewPagerDataSource.h */,
-				500B79D69E878E91078E6BDBCCDBACD1 /* SHViewPagerDelegate.h */,
-				F03A1B901D91A7AD009F242D /* SHViewPagerModule.h */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		8AE54892401B1519ADE12A64082C90D2 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,6 +293,22 @@
 			path = "Target Support Files/Pods-SHViewPager_Example";
 			sourceTree = "<group>";
 		};
+		98CC040E9B1FDDC3EB87110DFA4B48ED /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B28DF4E777AED6A5C93552530327F715 /* SHBaseView.h */,
+				A33F2D4F917B57ADD3EE8A1E6484A1F1 /* SHBaseView.m */,
+				4DDA8521A95205A6B73BB48E1EE2DC84 /* SHViewPager.h */,
+				CE612D27ACDA10DBA86C03B48A300241 /* SHViewPager.m */,
+				7F0B9B464CC59F5CA5502FC67A1FD98D /* SHViewPagerController.h */,
+				CF109AFFFF19308EBACA0242091833D0 /* SHViewPagerController.m */,
+				CB0FFDB85D4236FA46811164985C84D8 /* SHViewPagerDataSource.h */,
+				26E43C156362F5049A914C9469FE581D /* SHViewPagerDelegate.h */,
+				90493067B199A9A04B8A63B81C5034E0 /* SHViewPagerModule.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		A484F86C6E21397890F6C0E72AD2E9BB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,11 +317,19 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		A6F8CA022784198D4CD8FC954DFFDB37 /* SHViewPager */ = {
+			isa = PBXGroup;
+			children = (
+				98CC040E9B1FDDC3EB87110DFA4B48ED /* Classes */,
+			);
+			path = SHViewPager;
+			sourceTree = "<group>";
+		};
 		B552BF419855D8BBD5B4893CEABAE714 /* SHViewPager */ = {
 			isa = PBXGroup;
 			children = (
 				A484F86C6E21397890F6C0E72AD2E9BB /* Resources */,
-				39EE6C8D32B8129FB08FC5052C843864 /* SHViewPager */,
+				A6F8CA022784198D4CD8FC954DFFDB37 /* SHViewPager */,
 				66712FC018E36C4D63F45B1336EBE5BE /* Support Files */,
 			);
 			name = SHViewPager;
@@ -402,16 +403,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9B813899DA8AC5F0ED683857A40A7B4 /* Headers */ = {
+		B7AB02686D66BB2BF03CEC5F6439D94A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49F26A4F8186A190F0A0B6C53D68E349 /* SHBaseView.h in Headers */,
-				67A121D613694EA2313B0EE934CCE81B /* SHViewPager-umbrella.h in Headers */,
-				EFCD667842FB9F6BB9300B3E1822E95B /* SHViewPager.h in Headers */,
-				8879E3E982570A3C834FFF38D184CADB /* SHViewPagerController.h in Headers */,
-				03A9DF1BCD7096D62A90CAA257A85FB5 /* SHViewPagerDataSource.h in Headers */,
-				1BC4D82B9EAEDF74C36A8092BFABAFA3 /* SHViewPagerDelegate.h in Headers */,
+				270A138ABB1181103FA23AC1331CB411 /* SHBaseView.h in Headers */,
+				0CE0E2B0B03CD1CCF8F33A84953A3A52 /* SHViewPager-umbrella.h in Headers */,
+				D3CF222E376588A574E6EC64FE054F3D /* SHViewPager.h in Headers */,
+				3568AA891560160479C254038DF7B137 /* SHViewPagerController.h in Headers */,
+				2D5FF417D6C271FE3C64383D39D6BF19 /* SHViewPagerDataSource.h in Headers */,
+				0379EB5672EAF97D0EFA7AEEAC194666 /* SHViewPagerDelegate.h in Headers */,
+				95548ACEF8D03D73E90E791CCF618020 /* SHViewPagerModule.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,7 +508,7 @@
 				FB7CEBE5A9821EA57AA48C2F4AEDE4DD /* Sources */,
 				5DB1FBE092323BD084746470AE064634 /* Frameworks */,
 				7942CBD8C3F74E8581F4C611F809ED7D /* Resources */,
-				A9B813899DA8AC5F0ED683857A40A7B4 /* Headers */,
+				B7AB02686D66BB2BF03CEC5F6439D94A /* Headers */,
 			);
 			buildRules = (
 			);
