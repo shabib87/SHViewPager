@@ -1,8 +1,15 @@
 # Change Log
 
-## [2.0.6](https://github.com/shabib87/SHViewPager/tree/HEAD)
+## [2.0.7](https://github.com/shabib87/SHViewPager/tree/HEAD)
 
-[Full Changelog](https://github.com/shabib87/SHViewPager/compare/2.0.5...HEAD)
+[Full Changelog](https://github.com/shabib87/SHViewPager/compare/2.0.6...HEAD)
+
+**Implemented enhancements:**
+
+- Update to swift 3.0 [\#24](https://github.com/shabib87/SHViewPager/issues/24)
+
+## [2.0.6](https://github.com/shabib87/SHViewPager/tree/2.0.6) (2016-09-20)
+[Full Changelog](https://github.com/shabib87/SHViewPager/compare/2.0.5...2.0.6)
 
 **Fixed bugs:**
 
