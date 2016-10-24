@@ -32,7 +32,7 @@ iPhone interface:<br/><br/>
 
 ## Advantages
 
- * [x] Supports both Swift and Objective-C
+ * [x] Supports both Swift (v2.2 and v3.0) and Objective-C
  * [x] Supports all orientations
  * [x] Supports iPad
  * [x] Supports Autolayout
